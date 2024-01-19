@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>xw3.org</title>
+    <link rel="stylesheet" href="node_modules/xterm/css/xterm.css" />
+    <script src="node_modules/xterm/lib/xterm.js"></script>
+    <script src="js/main.js"></script>
+<style>
+body {
+  font-size: 16px;
+  font-family: monospace;
+}
+#parent {
+}
+.center {
+  text-align: center;
+}
+#powered {
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  text-align: right;
+}
+</style>
+</head>
+<body>
+<div id="parent">
+<pre>
+                                    _/_/_/
+   _/    _/  _/      _/      _/        _/        _/_/    _/  _/_/    _/_/_/
+    _/_/    _/      _/      _/    _/_/        _/    _/  _/_/      _/    _/
+ _/    _/    _/  _/  _/  _/          _/      _/    _/  _/        _/    _/
+_/    _/      _/      _/      _/_/_/    _/    _/_/    _/          _/_/_/
+                                                                     _/
+                                                                  _/_
+[ by <a href="https://hanez.org">hanez.org</a> | <a href="https://github.com/xw3org">github.com/xw3org</a> ]</pre>
+</div>
+
+<h1>WebSocket Chat</h1>
+<pre id='messages'></pre>
+<form action="" onsubmit="sendMessage(event)">
+    <input type="text" id="messageText" autocomplete="off"/>
+    <button>Send</button>
+</form>
+
+<script>
+const ws = new WebSocket("ws://localhost:8081/");
+ws.onmessage = function(event) {
+    let messages = document.getElementById('messages')
+    let message = document.createElement('code')
+    let content = document.createTextNode(event.data + "\n")
+    message.appendChild(content)
+    messages.appendChild(message)
+};
+function sendMessage(event) {
+    let input = document.getElementById("messageText")
+    ws.send(input.value)
+    input.value = ''
+    event.preventDefault()
+}
+</script>
+</body>
+</html>
+
