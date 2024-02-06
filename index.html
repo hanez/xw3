@@ -15,7 +15,7 @@ description: The XW3.ORG CGI research project
 
 <div class="post">
   <header class="post-header">
-    <h1 class="post-title" id="terminal">{{ page.title }}</h1>
+    <h1 class="post-title" id="terminal">{{ site.url_short }}:{{ page.title }}<a href="./">.</a></h1>
     <p>{{ page.subtitle }}</p>
   </header>
 </div>
@@ -47,8 +47,8 @@ description: The XW3.ORG CGI research project
 <h2>Pages</h2>
 
 <div id="pages">
-{% if paginator.page == 1 %}<a href="/" class="active" title="Seite 1">1</a>{% else %}<a href="/" title="Seite 1">1</a>{% endif %}
+{% if paginator.page == 1 %}<a href="/" class="active" title="Page 1">1</a>{% else %}<a href="/" title="Page 1">1</a>{% endif %}
 {% for count in (2..paginator.total_pages) %}
-{% if count == paginator.page %}<a href="/{{ count }}/" class="active" title="Seite {{ count }}">{{ count }}</a>{% else %}<a href="/{{ count }}/" title="Seite {{ count }}">{{ count }}</a>{% endif %}
+{% if count == paginator.page %}<a href="/{{ count }}/" class="active" title="Page {{ count }}">{{ count }}</a>{% else %}<a href="/{{ count }}/" title="Page {{ count }}">{{ count }}</a>{% endif %}
 {% endfor %}
 </div>

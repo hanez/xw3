@@ -1,1 +1,40 @@
-<?xml version="1.0" encoding="UTF-8"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>[xw3.org]</title><description>A static HTML and CGI based website...</description><link>https://xw3.org</link><atom:link href="https://xw3.org/feed.xml" rel="self" type="application/rss+xml"/><pubDate>Tue, 06 Feb 2024 16:22:11 +0000</pubDate><lastBuildDate>Tue, 06 Feb 2024 16:22:11 +0000</lastBuildDate><item><title>Welcome</title><description>&lt;p>This is a fun project at the moment… no content actually!&lt;/p></description><pubDate>Tue, 06 Feb 2024 00:00:00 +0000</pubDate><link>https://xw3.org/2024/02/06/welcome/</link><guid isPermaLink="true">https://xw3.org/2024/02/06/welcome/</guid><category>xw3</category><category>cgi</category><category>static</category><category>dynamic</category><category>jekyll</category><category>pinned</category><category>news</category><category>project</category></item></channel></rss>
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>xw3.org</title>
+    <description>A static HTML and CGI based website...</description>
+    <link>https://xw3.org</link>
+    <atom:link href="https://xw3.org/feed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Tue, 06 Feb 2024 18:06:34 +0000</pubDate>
+    <lastBuildDate>Tue, 06 Feb 2024 18:06:34 +0000</lastBuildDate>
+    
+      <item>
+        <title>Welcome</title>
+        <description>&lt;p&gt;This is a fun project at the moment… no content actually!&lt;/p&gt;
+
+</description>
+        <pubDate>Tue, 06 Feb 2024 00:00:00 +0000</pubDate>
+        <link>https://xw3.org/2024/02/06/welcome/</link>
+        <guid isPermaLink="true">https://xw3.org/2024/02/06/welcome/</guid>
+        
+        <category>xw3</category>
+        
+        <category>cgi</category>
+        
+        <category>static</category>
+        
+        <category>dynamic</category>
+        
+        <category>jekyll</category>
+        
+        <category>pinned</category>
+        
+        
+        <category>news</category>
+        
+        <category>project</category>
+        
+      </item>
+    
+  </channel>
+</rss>
