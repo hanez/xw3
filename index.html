@@ -1,58 +1,54 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <title>xw3.org</title>
-    <link rel=stylesheet href=/css/xw3.css>
-</head>
-<body>
+---
+layout: default
+title: /
+subtitle: ...
+metasub: news
+noToc: true
+tags:
+- xw3
+- project
+- cgi
+- static
+- jekyll
+description: The XW3.ORG CGI research project
+---
 
-<!--<div>Test test...</div>-->
-
-<div id="parent">
-
-<pre>
-                                    _/_/_/
-   _/    _/  _/      _/      _/        _/        _/_/    _/  _/_/    _/_/_/
-    _/_/    _/      _/      _/    _/_/        _/    _/  _/_/      _/    _/
- _/    _/    _/  _/  _/  _/          _/      _/    _/  _/        _/    _/
-_/    _/      _/      _/      _/_/_/    _/    _/_/    _/          _/_/_/
-                                                                     _/
-                                                                  _/_
-[ by <a href="https://hanez.org">hanez.org</a> | <a href="https://git.xw3.org/xw3">git.xw3.org/xw3</a> ]</pre>
-
+<div class="post">
+  <header class="post-header">
+    <h1 class="post-title" id="terminal">{{ page.title }}</h1>
+    <p>{{ page.subtitle }}</p>
+  </header>
 </div>
 
-<!--
-	<div id="main"><div id="content">
-		<div style="margin: 0 auto; max-width: 500px;"><p style="font-size: 1.4em;">To connect to InterLinked:</p>
-		<p>DIRECT DIAL MODEM ACCESS, <a href="https://portal.phreaknet.org/directory">via Phreaknet</a></p>
-		<pre>
-270-2441 300bps 8N1
-270-2445 45.45bps US TDD
-270-2450 50bps international TDD
-		</pre>
-		</div>
-		<p style="text-align: center;">Too new school? You can also telnet or SSH to <code>bbs.phreaknet.org</code> port 22 (SSH), 23(Telnet) - or, if you'd like, you can even access the BBS in your browser below!</p>
-		<p style="text-align: center; color: maroon;">We generally recommend <i>against</i> using the web console below, as it's laggy and an all around poor experience. Connect by modem, telnet, or SSH if possible. Connect by modem or SSH for a high-security connection.</p>
-		<div id="fTelnetContainer"></div>
-		<script>document.write('<script src="//embed.ftelnet.ca/js/ftelnet-loader.js?v=' + (new Date()).getTime() + '"><\/script>');</script>
-		<script>
-			fTelnet.Hostname = "bbs.phreaknet.org";
-			fTelnet.Port = 23;
-			fTelnet.ProxyHostname = "proxy-us-ca.ftelnet.ca";
-			fTelnet.ProxyPort = 80;
-			fTelnet.ProxyPortSecure = 443;
-			fTelnet.ConnectionType = "telnet";
-			fTelnet.Emulation = "ansi-bbs";
-			fTelnet.VirtualKeyboardVisible = true;
-			fTelnet.Init();
-			fTelnet.Connect();
-		</script>
-	</div></div>
-	<footer>
-		<a href="https://interlinked.us"><p id="level1"><span class="arrow">&#8595;</span> <span class="domain">interlinked.us</span></p></a>
-	</footer>-->
+{% if page.url == "/" %}
+{% for post in site.tags.pinned %}
+<article class="post-content">
+<h2><a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a> <span style="cursor:help; float: right;padding: 0 8px 0 8px;" title="Pinned Post!">📌</span></h2>
+<p class="post-meta">{{ post.date | date: "%b %-d, %Y" }}
+{% if post.date_updated %} - Updated: {{ post.date_updated | date: "%b %-d, %Y" }}{% endif %} ({{ site.timezone }})</p>
+{{ post.content }}
+<p>Permalink: <a href="{{ post.url }}" title="{{ site.url }}{{ post.url }}">{{ site.url }}{{ post.url }}</a></p>
+</article>
+{% endfor %}
+{% endif %}
 
-</body>
-</html>
+{% for post in paginator.posts %}
+{% unless post.tags contains 'pinned' %}
+<article class="post-content">
+<h2><a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a></h2>
+<p class="post-meta">{{ post.date | date: "%b %-d, %Y" }}
+{% if post.date_updated %} - Updated: {{ post.date_updated | date: "%b %-d, %Y" }}{% endif %} ({{ site.timezone }})</p>
+{{ post.content }}
+<p>Permalink: <a href="{{ post.url }}" title="{{ site.url }}{{ post.url }}">{{ site.url }}{{ post.url }}</a></p>
+</article>
+{% endunless %}
+{% endfor %}
 
+<h2>Pages</h2>
+
+<div id="pages">
+{% if paginator.page == 1 %}<a href="/" class="active" title="Seite 1">1</a>{% else %}<a href="/" title="Seite 1">1</a>{% endif %}
+{% for count in (2..paginator.total_pages) %}
+{% if count == paginator.page %}<a href="/{{ count }}/" class="active" title="Seite {{ count }}">{{ count }}</a>{% else %}<a href="/{{ count }}/" title="Seite {{ count }}">{{ count }}</a>{% endif %}
+{% endfor %}
+</div>

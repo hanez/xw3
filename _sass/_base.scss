@@ -1,0 +1,625 @@
+@font-face {
+    font-family: 'OpenSans-Regular';
+    src: url('../fonts/OpenSans-Regular.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'ForkAwesome';
+    src: url('../fonts/forkawesome-webfont.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'Graph-35-pix';
+    src: url('../fonts/Graph-35-pix.ttf');
+}
+
+@font-face {
+    font-family: 'CourierPrimeSans';
+    src: url('../fonts/Courier-Prime-Sans.ttf');
+}
+
+@font-face {
+  font-family: 'Glass-TTY-VT220';
+  src: url('../fonts/Glass_TTY_VT220.ttf');
+}
+
+html {
+}
+
+body, h1, h2, h3, h4, h5, h6,
+p, blockquote, pre, hr,
+dl, dd, ol, ul, figure {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: $base-font-family;
+    font-size: $base-font-size;
+    line-height: $base-line-height;
+    font-weight: 300;
+    color: $text-color;
+    background-color: $background-color;
+}
+
+h1, h2, h3, h4, h5, h6,
+p, blockquote, pre,
+ul, ol, dl, figure,
+%vertical-rhythm {
+    margin-bottom: calc($spacing-unit / 2);
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: $headline-color;
+}
+
+.blinky {
+    animation: blinker 4s linear infinite;
+    color: #ffffff;
+    font-family: "Graph-35-pix";
+    font-size: 22px;
+    text-decoration: none;
+}
+@keyframes blinker {
+    50% {
+        opacity: 0;
+    }
+}
+
+h1 {
+    font-family: "Graph-35-pix";
+    font-size: 22px;
+}
+
+#terminal::before {
+    content: "";
+}
+@media (prefers-reduced-motion: no-preference) {
+      @keyframes flash {
+      50% { opacity: 0; }
+  }
+  @keyframes reveal {
+      from { width: 2em; }
+      to { width: 100%; }
+  }
+  #terminal {
+      overflow: hidden;
+      white-space: nowrap;
+      animation: reveal 6s linear;
+      text-overflow: "▉";
+  }
+  #terminal::after {
+      content: "▉";
+      animation: flash 1.5s step-end infinite;
+  }
+}
+
+h2 {
+    font-family: "Graph-35-pix";
+    font-size: 18px;
+    padding-bottom: 4px;
+    padding-top: 8px;
+    padding-left: 8px;
+    margin-top: 14px;
+    background-color: $grey-color-light;
+    border: 1px solid $grey-color;
+    //border-radius: 12px;
+    > a,
+      a:link,
+      a:visited {
+        text-decoration: none;
+    }
+}
+
+h3 {
+    padding-top: 8px;
+}
+
+img {
+    max-width: 100%;
+    vertical-align: middle;
+}
+
+img.l {
+    border: 0;
+    float:left;
+    margin: 6px 16px 0 0;
+    padding: 0;
+}
+
+img.r {
+    border: 0;
+    float: right;
+    margin: 6px 0 0 16px;
+    padding: 0;
+}
+
+img.x {
+    max-width: 99.8%;
+    border: 1px solid #000;
+    //border-radius: 12px 12px;
+}
+
+ul, ol {
+    margin-left: calc($spacing-unit + 20px);
+}
+
+li {
+    > ul,
+    > ol {
+         margin-bottom: 0;
+    }
+}
+
+a {
+  color: $brand-color;
+}
+
+a:link {
+    text-decoration: underline;
+}
+
+a:visited {
+    color: $brand-color;
+    text-decoration: underline;
+}
+
+a:focus,
+a:hover {
+    color: $hover-color;
+    text-decoration: none;
+    text-shadow: $hover-color 0px 0px 6px;
+}
+
+a:active {
+    color: $hover-color;
+    text-decoration: none;
+}
+
+p {
+  text-align: justify;
+}
+
+blockquote {
+    color: $grey-color;
+    border-left: 4px solid $grey-color-light;
+    padding-left: calc($spacing-unit / 2);
+    font-size: 18px;
+    letter-spacing: -1px;
+    font-style: italic;
+    > :last-child {
+        margin-bottom: 0;
+    }
+}
+
+pre {
+    counter-reset: line;
+    -moz-tab-size: 2;
+    tab-size: 2;
+    //border-radius: 12px;
+    font-family: "CourierPrimeSans";
+    font-size: $base-font-size;
+    margin: 0 0 0 0;
+    padding: 0 0 0 0.5em;
+    border: 1px $grey-color solid;
+    overflow: auto;
+    overflow-x: auto;
+    line-height: 1.4em;
+    // https://stackoverflow.com/questions/5840328/styling-each-line-inside-pre-with-css
+    background: $grey-color-dark;
+    background-image: -webkit-linear-gradient($grey-color-dark 50%, $grey-color-light 50%);
+    background-image: -moz-linear-gradient($grey-color-dark 50%, $grey-color-light 50%);
+    background-image: -ms-linear-gradient($grey-color-dark 50%, $grey-color-light 50%);
+    background-image: -o-linear-gradient($grey-color-dark 50%, $grey-color-light 50%);
+    background-image: linear-gradient($grey-color-dark 50%, $grey-color-light 50%);
+    background-position: 0 0;
+    background-repeat: repeat;
+    background-size: 2.8em 2.8em;
+}
+
+pre > code {
+    font-family: "CourierPrimeSans";
+    counter-increment: line;
+    font-size: $base-font-size;
+    margin: 0 0 0 0;
+    padding: 0 0 0 0;
+}
+
+pre > code:before{
+    content: counter(line);
+    display: inline-block;
+    width: 2.0em;
+    border-right: 1px solid $grey-color;
+    padding-right: .7em;
+    margin-right: .7em;
+    color: #bc6c21;
+    -webkit-user-select: none;
+    text-align: right;
+}
+
+audio {
+    height: 24px;
+    width: 100%;
+    //border-radius: 12px;
+}
+
+//tr:nth-child(even) {}
+//tr:nth-child(odd) {}
+
+table {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+table > thead > tr {}
+
+table > thead > tr > th {
+    background: #293e58;
+    border: 1px solid black;
+    color: white;
+    padding: 4px;
+}
+
+table > tbody > tr:nth-child(even) {
+    background: $grey-color-light;
+}
+
+table > tbody > tr:nth-child(odd) {
+    background: $grey-color-dark;
+}
+
+table > tbody > tr > td {
+    padding: 4px;
+}
+
+table.sortable th:not(.sorttable_sorted):not(.sorttable_sorted_reverse):not(.sorttable_nosort):after {
+    content: " \25B4 \25BE"
+}
+
+.wrapper {
+    max-width: calc(#{$content-width} - (#{$spacing-unit} * 2));
+    margin-right: auto;
+    margin-left: auto;
+    padding-right: $spacing-unit;
+    padding-left: $spacing-unit;
+    padding-top: calc($spacing-unit / 2);
+    padding-bottom: 0;
+    @extend %clearfix;
+    @include media-query($on-laptop) {
+        max-width: calc(#{$content-width} - (#{$spacing-unit}));
+        padding-right: calc($spacing-unit / 2);
+        padding-left: calc($spacing-unit / 2);
+    }
+}
+
+%clearfix {
+    &:after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+}
+
+.icon {
+    > svg {
+        display: inline-block;
+        width: 16px;
+        height: 16px;
+        vertical-align: middle;
+        path {
+            fill: $grey-color;
+        }
+    }
+}
+
+.pagination a, span {
+    margin-left: 4px;
+    margin-right: 4px;
+}
+
+a.ext::after {
+    content: "\f08e";
+    font-family: "ForkAwesome";
+    padding-left: 5px;
+    color: $brand-color-light;
+    text-decoration: none;
+}
+
+a.mail::after,
+span.mail::after {
+    content: "\f0e0";
+    font-family: "ForkAwesome";
+    padding-left: 5px;
+    color: $brand-color-light;
+}
+
+a.document {
+    content: "\f15b";
+    font-family: "ForkAwesome";
+    padding-left: 5px;
+    color: $brand-color-light;
+}
+
+a.cube::after {
+    content: "\f1b2";
+    font-family: "ForkAwesome";
+    padding-left: 5px;
+    color: $brand-color-light;
+}
+
+a.file::after {
+    content: "\f0c7";
+    font-family: "ForkAwesome";
+    padding-left: 5px;
+    color: $brand-color-light;
+}
+
+a.person::after {
+    content: "\f007";
+    font-family: "ForkAwesome";
+    padding-left: 5px;
+    color: $brand-color-light;
+}
+
+a.chat::after,
+span.chat::after {
+    content: "\f075";
+    font-family: "ForkAwesome";
+    padding-left: 5px;
+    color: $brand-color-light;
+}
+
+span.feed {
+    border: 1px solid;
+    border-color: #FC9 #630 #330 #F96;
+    padding: 0 3px;
+    font: bold 0.4em sans-serif;
+    color: #fff;
+    background: #f60;
+    text-decoration: none;
+    margin: 0;
+}
+
+#topbutton {
+    text-align: center;
+    padding: 0;
+    width: 46px;
+    height: 46px;
+    background: $topbutton-color url(/images/up-arrow.png) no-repeat center center;
+    //border-radius: 12px;
+    border: 1px solid $grey-color-dark;
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    cursor: pointer;
+}
+
+span.cursor {
+    color: #FF9500;
+    display: inline-block;
+    background: transparent;
+    margin-left: 1px;
+    animation: 1s blink step-end infinite;
+}
+
+@keyframes "blink" bold {
+    from, to {
+        color: transparent;
+    }
+    50% {
+        color: black;
+    }
+}
+
+@-webkit-keyframes "blink" bold {
+    from, to {
+        color: transparent;
+    }
+    50% {
+        color: black;
+    }
+}
+
+@-ms-keyframes "blink" bold {
+    from, to {
+        color: transparent;
+    }
+    50% {
+        color: black;
+    }
+}
+
+@-o-keyframes "blink" {
+    from, to {
+        color: transparent;
+    }
+    50% {
+        color: black;
+    }
+}
+
+#pages {
+    text-align: center;
+}
+
+#pages a:link,
+#pages a:visited,
+#pages strong {
+    //border-radius: 6px;
+    float: left;
+    width: 1.8em;
+    border: 1px solid #000;
+    font-weight: bold;
+    text-decoration: none;
+    text-align: center;
+    margin: 0px 4px 4px 0;
+    padding: 2px;
+    background: $brand-color;
+    color: #fff;
+}
+
+#pages > a.active {
+    color: $grey-color-light;
+    background: #fff;
+    border-color: $grey-color;
+}
+
+#pages a:focus,
+#pages a:hover,
+#pages a:active {
+    color: $hover-color;
+    background: #fff;
+}
+
+#pages p {
+    float: left;
+    width: 100%;
+}
+
+/* (B) NOTIFICATION */
+#notify {
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid $grey-color;
+    background: $headline-color;
+}
+
+/* (C) CONTACTFORM */
+#contactform {
+    padding: 20px;
+    border: 1px solid $grey-color;
+    //border-radius: 12px;
+    background: $grey-color-light;
+}
+
+#contactform label, #contactform input, #contactform textarea {
+    display: block;
+    width: 97%;
+    resize: none;
+}
+
+#contactform textarea {
+    height: 120px;
+}
+
+#contactform label { margin: 10px 0; }
+
+#contactform label:first-child { margin-top: 0; }
+
+#contactform input, #contactform textarea {
+    font-family: $base-font-family;
+    font-size: $base-font-size;
+    line-height: $base-line-height;
+    font-weight: 300;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid $grey-color;
+    //border-radius: 12px;
+}
+
+#contactform input[type=submit] {
+    border: 0;
+    //border-radius: 12px;
+    color: #fff;
+    background: $brand-color;
+    cursor: pointer;
+    width: 100%;
+}
+
+#contactform input[type=submit]:hover {
+    background: $headline-color;
+}
+
+/* (C) SEARCHFORM */
+#searchform {
+    padding: 20px;
+    border: 1px solid $grey-color;
+    //border-radius: 12px;
+    background: $grey-color-light;
+}
+
+#searchform label, #searchform input, #searchform textarea {
+    display: block;
+    width: 97%;
+    resize: none;
+}
+
+#searchform textarea {
+    height: 120px;
+}
+
+#searchform label { margin: 10px 0; }
+
+#searchform label:first-child { margin-top: 0; }
+
+#searchform input, #searchform textarea {
+    font-family: $base-font-family;
+    font-size: $base-font-size;
+    line-height: $base-line-height;
+    font-weight: 300;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid $grey-color;
+    //border-radius: 12px;
+}
+
+#searchform input[type=submit] {
+    border: 0;
+    //border-radius: 12px;
+    color: #fff;
+    background: $brand-color;
+    cursor: pointer;
+    width: 100%;
+}
+
+#searchform input[type=submit]:hover {
+    background: $headline-color;
+}
+
+/* SPINNER */
+/*Hidden class for adding and removing*/
+.lds-dual-ring.hidden {
+    display: none;
+}
+
+/*Add an overlay to the entire page blocking any further presses to buttons or other elements.*/
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    min-width: 100%;
+    height: 100%;
+    min-height: 100%;
+    background: rgba(0,0,0,.8);
+    z-index: 999;
+    opacity: 1;
+    transition: all 0.5s;
+}
+
+/*Spinner Styles*/
+.lds-dual-ring {
+    display: inline-block;
+    width: 80px;
+    height: 80px;
+}
+.lds-dual-ring:after {
+    content: " ";
+    display: block;
+    width: 64px;
+    height: 64px;
+    margin: 5% auto;
+    border-radius: 50%;
+    border: 6px solid #fff;
+    border-color: #fff transparent #fff transparent;
+    animation: lds-dual-ring 1.2s linear infinite;
+}
+@keyframes lds-dual-ring {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+

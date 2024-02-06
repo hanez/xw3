@@ -1,0 +1,17 @@
+//#toc-container h2 {
+//    font-size: 1.4em;
+//}
+
+#toc-container ul {
+    list-style-image: none;
+    list-style-type: none;
+    margin-left: $spacing-unit;
+    //margin:0;
+    //padding: 0;
+    //text-align: left;
+}
+
+#toc-container ul li {
+    list-style-type: none;
+    padding-left: 0;
+}
