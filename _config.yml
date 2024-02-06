@@ -9,7 +9,7 @@ url_short: xw3.org
 lang: en
 os: GNU/Linux
 timezone: CET/CEST
-
+lifetime: 3600
 challenge_error: Invalid challenge result! Please try again... :(
 mail_thank_you: Thank you for contacting me... :)
 
