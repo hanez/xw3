@@ -1,3 +1,0 @@
-Sitemap: https://xw3.org/sitemap.xml
-User-agent: *
-Disallow:
