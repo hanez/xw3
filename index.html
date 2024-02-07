@@ -10,7 +10,7 @@ tags:
 - cgi
 - static
 - jekyll
-description: The XW3.ORG CGI research project
+description: The xw3 CGI research project
 ---
 
 <div class="post">
@@ -20,14 +20,15 @@ description: The XW3.ORG CGI research project
   </header>
 </div>
 
+<h2>Latest <a href="/blog/">blog</a> posts</h2>
+
 {% if page.url == "/" %}
 {% for post in site.tags.pinned %}
 <article class="post-content">
-<h2><a href="{{ post.url }}" title="{{ post.title }}">{{ post.url }}</a> <span style="cursor:help; float: right;padding: 0 8px 0 8px;" title="Pinned Post!">📌</span></h2>
+<h3><a href="{{ post.url }}" title="{{ post.title }}">{{ post.url }}</a> <span style="cursor:help; float: right;padding: 0 8px 0 8px;" title="Pinned Post!">📌</span></h3>
 <p class="post-meta">{{ post.date | date: "%b %-d, %Y" }}
 {% if post.date_updated %} - Updated: {{ post.date_updated | date: "%b %-d, %Y" }}{% endif %} ({{ site.timezone }})</p>
 {{ post.content }}
-<p>Permalink: <a href="{{ post.url }}" title="{{ site.url }}{{ post.url }}">{{ site.url }}{{ post.url }}</a></p>
 </article>
 {% endfor %}
 {% endif %}
@@ -35,20 +36,11 @@ description: The XW3.ORG CGI research project
 {% for post in paginator.posts %}
 {% unless post.tags contains 'pinned' %}
 <article class="post-content">
-<h2><a href="{{ post.url }}" title="{{ post.title }}">{{ post.url }}</a></h2>
+<h3><a href="{{ post.url }}" title="{{ post.title }}">{{ post.url }}</a></h3>
 <p class="post-meta">{{ post.date | date: "%b %-d, %Y" }}
 {% if post.date_updated %} - Updated: {{ post.date_updated | date: "%b %-d, %Y" }}{% endif %} ({{ site.timezone }})</p>
 {{ post.content }}
-<p>Permalink: <a href="{{ post.url }}" title="{{ site.url }}{{ post.url }}">{{ site.url }}{{ post.url }}</a></p>
 </article>
 {% endunless %}
 {% endfor %}
 
-<h2>cd</h2>
-
-<div id="pages">
-{% if paginator.page == 1 %}<a href="/" class="active" title="Page 1">1</a>{% else %}<a href="/" title="Page 1">1</a>{% endif %}
-{% for count in (2..paginator.total_pages) %}
-{% if count == paginator.page %}<a href="/{{ count }}/" class="active" title="Page {{ count }}">{{ count }}</a>{% else %}<a href="/{{ count }}/" title="Page {{ count }}">{{ count }}</a>{% endif %}
-{% endfor %}
-</div>

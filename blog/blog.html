@@ -1,0 +1,56 @@
+---
+layout: default
+title: /blog/
+subtitle: This is a work in progress... More to come soon!
+metasub: news
+noToc: true
+tags:
+- xw3
+- project
+- cgi
+- static
+- jekyll
+- blog
+description: The XW3.ORG CGI research project
+permalink: /blog/
+---
+
+<div class="post">
+  <header class="post-header">
+    <h1 class="post-title" id="terminal">{{ site.url_short }}:{{ page.title }}<a href="../">..</a></h1>
+    <p>{{ page.subtitle }}</p>
+  </header>
+</div>
+
+{% if page.url == "/blog/" %}
+{% for post in site.tags.pinned %}
+<article class="post-content">
+<h2><a href="{{ post.url }}" title="{{ post.title }}">{{ post.url }}</a> <span style="cursor:help; float: right;padding: 0 8px 0 8px;" title="Pinned Post!">📌</span></h2>
+<p class="post-meta">{{ post.date | date: "%b %-d, %Y" }}
+{% if post.date_updated %} - Updated: {{ post.date_updated | date: "%b %-d, %Y" }}{% endif %} ({{ site.timezone }})</p>
+{{ post.content }}
+<p>Permalink: <a href="{{ post.url }}" title="{{ site.url }}{{ post.url }}">{{ site.url }}{{ post.url }}</a></p>
+</article>
+{% endfor %}
+{% endif %}
+
+{% for post in paginator.posts %}
+{% unless post.tags contains 'pinned' %}
+<article class="post-content">
+<h2><a href="{{ post.url }}" title="{{ post.title }}">{{ post.url }}</a></h2>
+<p class="post-meta">{{ post.date | date: "%b %-d, %Y" }}
+{% if post.date_updated %} - Updated: {{ post.date_updated | date: "%b %-d, %Y" }}{% endif %} ({{ site.timezone }})</p>
+{{ post.content }}
+<p>Permalink: <a href="{{ post.url }}" title="{{ site.url }}{{ post.url }}">{{ site.url }}{{ post.url }}</a></p>
+</article>
+{% endunless %}
+{% endfor %}
+
+<h2>cd</h2>
+
+<div id="pages">
+{% if paginator.page == 1 %}<a href="/" class="active" title="Page 1">1</a>{% else %}<a href="/" title="Page 1">1</a>{% endif %}
+{% for count in (2..paginator.total_pages) %}
+{% if count == paginator.page %}<a href="/{{ count }}/" class="active" title="Page {{ count }}">{{ count }}</a>{% else %}<a href="/{{ count }}/" title="Page {{ count }}">{{ count }}</a>{% endif %}
+{% endfor %}
+</div>
