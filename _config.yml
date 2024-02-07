@@ -45,9 +45,13 @@ category_archive:
   path: /category/
 
 plugins:
+  - jekyll-admin
+# https://stackoverflow.com/questions/10218779/custom-variables-in-jekyll-front-matter
+# https://github.com/gjtorikian/jekyll-conrefifier
+# https://stackoverflow.com/questions/65989040/bundle-exec-jekyll-serve-cannot-load-such-file
+#  - jekyll-conrefifier
   - jekyll-paginate
   - jekyll-sitemap
-  - jekyll-admin
   - jekyll-toc
 
 defaults:

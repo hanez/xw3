@@ -73,6 +73,7 @@ echo '</ul>';
 <!-- ENABLE WITH CARE!!! <h3>SERVER:</h3>
 
 <?php
+/**
 ksort($_SERVER);
 echo '<ul>';
 foreach ($_SERVER as $key => $value) {
@@ -81,11 +82,12 @@ foreach ($_SERVER as $key => $value) {
     echo '</li>';
 }
 echo '</ul>';
-?>-->
+*/?>-->
 
 <!-- ENABLE WITH CARE!!! <h2>Runtimes</h2>
 
 <?php
+/**
 echo '<ul>';
 echo '<li>bash --version: ' . shell_exec('bash --version');
 echo ' - <a href="https://www.gnu.org/software/bash/" class="ext">https://www.gnu.org/software/bash/</a></li><li>';
@@ -110,5 +112,5 @@ echo ' - <a href="https://www.ruby-lang.org/en/" class="ext">https://www.ruby-la
 echo 'zsh --version: ' . shell_exec('zsh --version');
 echo ' - <a href="https://www.zsh.org/" class="ext">https://www.zsh.org/</a></li>';
 echo '</ul>';
-?>-->
+*/?>-->
 

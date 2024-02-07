@@ -1,0 +1,20 @@
+---
+layout: page
+published: true
+noToc: true
+noDate: true
+noPermalink: true
+title: /search/
+subtitle: Search this site using <a href="https://duckduckgo.com/" class="ext">DuckDuckGo</a>
+permalink: /search/
+tags:
+- search
+- duckduckgo
+---
+
+<form method="get" id="searchform" action="https://duckduckgo.com/">
+  <input type="hidden" name="sites" value="{{ site.url_short }}"/>
+  <input type="input" name="q" placeholder="Keywords&hellip;" required/>
+  <input type="submit" value="Search!" />
+</form>
+
