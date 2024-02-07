@@ -1,16 +1,29 @@
 title: xw3.org
+
 org: xw3.org
+
 subtitle: This is a work in progress... More to come soon!
+
 email: mail@xw3.org
+
 description: A static HTML and CGI based website...
+
 baseurl: ""
+
 url: https://xw3.org
+
 url_short: xw3.org
+
 lang: en
+
 os: GNU/Linux
+
 timezone: CET/CEST
+
 lifetime: 3600
+
 challenge_error: Invalid challenge result! Please try again... :(
+
 mail_thank_you: Thank you for contacting me... :)
 
 username: xw3
@@ -29,7 +42,7 @@ markdown: kramdown
 tocTopTag: h2
 anchorPrefix: ""
 showToggleButton: false
-contentsLabel: TOC
+contentsLabel: Table of contents
 
 exclude:
   - .idea/
