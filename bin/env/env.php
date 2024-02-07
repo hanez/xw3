@@ -3,9 +3,9 @@ layout: page
 published: true
 noToc: true
 noDate: true
-title: /tools/env/
+title: /bin/env/
 subtitle:
-permalink: /tools/env/
+permalink: /bin/env/
 tags:
 - env
 - environment

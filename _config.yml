@@ -33,7 +33,6 @@ contentsLabel: TOC
 
 exclude:
   - .idea/
-  - bin/
   - venv/
   - .project
   - build.log
