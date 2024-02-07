@@ -18,7 +18,6 @@ layout:
 {% include footer.html %}
   </div>
   <p style="text-align: center; color: #e8e8e8; font-size: 12px;">
-  <span id="uptime">NULL</span><br>
   Page generated at: {{ site.time | date: "%b %-d, %Y" }} ({{ site.timezone }}) using Jekyll on {{ site.os }} @jupiter<br>
   Powered by: <span id="uname">NULL</span>
   </p>
@@ -29,7 +28,6 @@ layout:
   <script>
   $(document).ready(function(){
     $("#uname").load("/cgi/uname/");
-    $("#uptime").load("/cgi/uptime/");
   });
   </script>
 
