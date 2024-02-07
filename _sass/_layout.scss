@@ -85,9 +85,8 @@
 .site-footer {
     margin: calc($spacing-unit / 4);
     //border-radius: 12px 12px;
-    background-color: $grey-color-light;
-    border: 1px solid $grey-color;
-    margin: 0 18px 18px 18px;
+    //background-color: $grey-color-light;
+    //border: 1px solid $grey-color;
 }
 
 .footer-col-wrapper {
@@ -152,37 +151,5 @@
 }
 
 .post-content img {
-     //border-radius: 12px 12px;
-     //border: 0px solid $grey-color-light;
 }
-
-//.search
-//{
-//    padding-bottom: 0px;
-//}
-
-//#search
-//{
-//    width: 100%;
-//    margin: 0;
-//}
-
-//#search input
-//{
-//    display:inline;
-//    width: 94%;
-//    background-color: #fafafa;
-//    border: 1px solid #9a9a9a;
-//    padding: 6px;
-//    margin: 0;
-//    color: #2b2b2b;
-//    border-radius: 8px;
-//    box-shadow: 0 1px 0 rgba(255,255,255,.5);
-//}
-
-//#search input:focus
-//{
-//    outline: none;
-//    box-shadow: 0 1px 0 rgba(255,255,255,.2), 0 0 12px #4f4f4f;
-//}
 
