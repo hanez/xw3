@@ -37,7 +37,7 @@ runclean:
 	jekyll s --incremental --drafts
 
 sync:
-	rsync -avr --delete --delete-excluded --exclude=_site/build.log --exclude=_site/Makefile ./_site/ xw3.org:/var/www/xw3.org/www/_site/
+	rsync -avr --delete --delete-excluded ./_site/ xw3.org:/var/www/xw3.org/www/_site/
 	scp -r .well-known xw3.org:/var/www/xw3.org/www/_site/
 
 syncdev:
