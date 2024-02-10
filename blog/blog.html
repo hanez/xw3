@@ -22,26 +22,24 @@ permalink: /blog/
   </header>
 </div>
 
-{% if page.url == "/blog/" %}
+<h2>Latest posts</h2>
+
 {% for post in site.tags.pinned %}
-<article class="post-content">
-<h2><a href="{{ post.url }}" title="{{ post.title }}">{{ post.url }}</a> <span style="cursor:help; float: right;padding: 0 8px 0 8px;" title="Pinned Post!">📌</span></h2>
+<article class="post-content" style="padding:0px 8px 0px 8px;">
+<h3><a href="{{ post.url }}" title="{{ post.title }}">{{ post.url }}</a> <span style="cursor:help; float: right;padding: 0 8px 0 8px;" title="Pinned Post!">📌</span></h3>
 <p class="post-meta">{{ post.date | date: "%b %-d, %Y" }}
 {% if post.date_updated %} - Updated: {{ post.date_updated | date: "%b %-d, %Y" }}{% endif %} ({{ site.timezone }})</p>
 {{ post.content }}
-<p>Permalink: <a href="{{ post.url }}" title="{{ site.url }}{{ post.url }}">{{ site.url }}{{ post.url }}</a></p>
 </article>
 {% endfor %}
-{% endif %}
 
-{% for post in paginator.posts %}
+{% for post in site.posts %}
 {% unless post.tags contains 'pinned' %}
-<article class="post-content">
-<h2><a href="{{ post.url }}" title="{{ post.title }}">{{ post.url }}</a></h2>
+<article class="post-content" style="padding:0px 8px 0px 8px;">
+<h3><a href="{{ post.url }}" title="{{ post.title }}">{{ post.url }}</a></h3>
 <p class="post-meta">{{ post.date | date: "%b %-d, %Y" }}
 {% if post.date_updated %} - Updated: {{ post.date_updated | date: "%b %-d, %Y" }}{% endif %} ({{ site.timezone }})</p>
 {{ post.content }}
-<p>Permalink: <a href="{{ post.url }}" title="{{ site.url }}{{ post.url }}">{{ site.url }}{{ post.url }}</a></p>
 </article>
 {% endunless %}
 {% endfor %}
