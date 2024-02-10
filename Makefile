@@ -40,3 +40,6 @@ sync:
 	rsync -avr --delete --delete-excluded --exclude=build.log --exclude=Makefile ./_site/ xw3.org:/var/www/xw3.org/www/_site/
 	scp -r .well-known xw3.org:/var/www/xw3.org/www/_site/
 
+syncdev:
+	rsync -avr --delete --delete-excluded --exclude=build.log --exclude=Makefile ./ xw3.org:/var/www/xw3.org/www/
+
