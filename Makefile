@@ -2,7 +2,7 @@ all:
 	make release
 
 build:
-	git log -n15 --pretty='format:<li>%C(auto)%h (%s, %ad)</li>' > gitlog.html
+	git log -n15 --pretty='format:<li>%h (%s, %ad)</li>' > gitlog.html
 	jekyll b --incremental
 
 clean:
