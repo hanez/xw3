@@ -5,7 +5,7 @@ subtitle: Extending the world wide web
 keywords: xw3,static,jekyll,cgi,dynamic,php
 email: mail@xw3.org
 description: A static HTML and CGI based website...
-baseurl: ""
+baseurl:
 url: https://xw3.org
 url_short: xw3.org
 lang: en

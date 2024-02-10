@@ -47,7 +47,7 @@ permalink: /blog/
 <h2>cd</h2>
 
 <div id="pages">
-{% if paginator.page == 1 %}<a href="/" class="active" title="Page 1">1</a>{% else %}<a href="/" title="Page 1">1</a>{% endif %}
+{% if paginator.page == 1 %}<a href="/blog/" class="active" title="Page 1">1</a>{% else %}<a href="/blog/" title="Page 1">1</a>{% endif %}
 {% for count in (2..paginator.total_pages) %}
 {% if count == paginator.page %}<a href="/{{ count }}/" class="active" title="Page {{ count }}">{{ count }}</a>{% else %}<a href="/{{ count }}/" title="Page {{ count }}">{{ count }}</a>{% endif %}
 {% endfor %}
