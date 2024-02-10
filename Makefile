@@ -7,6 +7,7 @@ build:
 
 clean:
 	rm -rf _site/*
+	rm -f gitlog.html
 
 freshrelease:
 	make clean
@@ -36,6 +37,6 @@ runclean:
 	jekyll s --incremental --drafts
 
 sync:
-	rsync -avr --delete --delete-excluded --exclude=build.log --exclude=Makefile ./_site/ xw3.org:/var/www/xw3.org/www/htdocs/
-	scp -r .well-known xw3.org:/var/www/xw3.org/www/htdocs/
+	rsync -avr --delete --delete-excluded --exclude=build.log --exclude=Makefile ./_site/ xw3.org:/var/www/xw3.org/www/_site/
+	scp -r .well-known xw3.org:/var/www/xw3.org/www/_site/
 
