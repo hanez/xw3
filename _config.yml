@@ -26,8 +26,8 @@ cookiebanner_link_text: Privacy Policy
 cookiebanner_link: /privacy/
 
 paginate: 3
-paginate_path: /:num/
-permalink: /:year/:month/:day/:title/
+paginate_path: /blog/page/:num/
+permalink: /blog/:year/:month/:day/:title/
 
 markdown: kramdown
 
