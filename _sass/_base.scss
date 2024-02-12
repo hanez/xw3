@@ -49,19 +49,6 @@ h1, h2, h3, h4, h5, h6 {
     font-family: "Glass-TTY-VT220";
 }
 
-.blinky {
-    animation: blinker 4s linear infinite;
-    color: #ffffff;
-    font-family: "Glass-TTY-VT220";
-    font-size: 22px;
-    text-decoration: none;
-}
-@keyframes blinker {
-    50% {
-        opacity: 0;
-    }
-}
-
 h1 {
     font-size: 38px;
 }
