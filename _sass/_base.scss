@@ -9,11 +9,6 @@
 }
 
 @font-face {
-    font-family: 'Graph-35-pix';
-    src: url('../fonts/Graph-35-pix.ttf');
-}
-
-@font-face {
     font-family: 'CourierPrimeSans';
     src: url('../fonts/Courier-Prime-Sans.ttf');
 }
@@ -51,12 +46,13 @@ ul, ol, dl, figure,
 
 h1, h2, h3, h4, h5, h6 {
     color: $headline-color;
+    font-family: "Glass-TTY-VT220";
 }
 
 .blinky {
     animation: blinker 4s linear infinite;
     color: #ffffff;
-    font-family: "Graph-35-pix";
+    font-family: "Glass-TTY-VT220";
     font-size: 22px;
     text-decoration: none;
 }
@@ -67,8 +63,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h1 {
-    font-family: "Graph-35-pix";
-    font-size: 22px;
+    font-size: 38px;
 }
 
 #terminal::before {
@@ -95,8 +90,7 @@ h1 {
 }
 
 h2 {
-    font-family: "Graph-35-pix";
-    font-size: 18px;
+    font-size: 30px;
     //padding-bottom: 4px;
     //padding-top: 8px;
     //padding-left: 8px;
