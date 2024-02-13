@@ -2,7 +2,7 @@ all:
 	make release
 
 build:
-	git log -n15 --pretty='format:<li><a href="https://git.xw3.org/xw3/xw3.org/commit/%H">%s</a> - %ad</li>' > gitlog.html
+	git log -n25 --pretty='format:<li>%ad - <a href="https://git.xw3.org/xw3/xw3.org/commit/%H">%s</a></li>' > gitlog.html
 	#git log -n15 --pretty='format:<li><a href="https://git.xw3.org/xw3/xw3.org/commit/%H">%s</a> (%h), %ad - %an</li>' > gitlog.html
 	jekyll b --incremental
 
