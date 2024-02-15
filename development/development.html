@@ -1,0 +1,21 @@
+---
+layout: page
+published: true
+noToc: true
+title: /development/
+subtitle:
+permalink: /development/
+---
+
+<h2>Git log</h2>
+
+<ul id="gitlog" name="gitlog" style="font-family: CourierPrimeSans;">NULL</ul>
+
+<script>
+$(document).ready(function(){
+  $("#gitlog").load("/cgi/gitlog/");
+});
+</script>
+
+<p style="text-align:right;"><a href="https://git.xw3.org/xw3/xw3.org/commits/branch/main">[View full git log]</a></p>
+
