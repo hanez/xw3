@@ -2,7 +2,13 @@ document_root: /var/www/xw3.org/www/_site/
 title: xw3.org
 org: xw3.org
 subtitle: Extending the world wide web
-keywords: xw3,static,jekyll,cgi,dynamic,php
+keywords:
+  - xw3
+  - static
+  - jekyll
+  - cgi
+  - dynamic
+  - php
 email: mail@xw3.org
 description: A static HTML and CGI based website...
 baseurl:
@@ -11,6 +17,7 @@ url_short: xw3.org
 lang: en
 os: GNU/Linux
 timezone: CET/CEST
+charset: utf-8
 
 lifetime: 3600
 
