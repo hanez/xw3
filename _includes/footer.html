@@ -1,7 +1,7 @@
 <footer class="site-footer">
   <div class="wrapper">
     <div class="footer-col-wrapper">
-      <p style="text-align:center;">
+      <p style="text-align:center;">{% if site.git %}Source: <a href="{{ site.git }}{{ page.path }}">{{ site.git }}{{ page.path }}</a><br>{% endif %}
         Copyright &copy; {{ site.time | date: "%Y" }} - {{ site.title }} -
         <a class="page-link" href="/contact/" style="text-decoration: none;">/contact/</a> -
         <a class="page-link" href="/privacy/" style="text-decoration: none;">/privacy/</a> -
