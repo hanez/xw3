@@ -3,9 +3,9 @@ layout: page
 published: true
 noToc: true
 noDate: true
-title: /bin/env/
+title: /examples/env/
 subtitle:
-permalink: /bin/env/
+permalink: /examples/env/
 tags:
 - env
 - environment
