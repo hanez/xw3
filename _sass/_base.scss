@@ -233,6 +233,20 @@ table.sortable th:not(.sorttable_sorted):not(.sorttable_sorted_reverse):not(.sor
   content: " \25B4 \25BE"
 }
 
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  min-width: 100%;
+  height: 100%;
+  min-height: 100%;
+  background: rgba(0,0,0,.8);
+  z-index: 999;
+  opacity: 1;
+  transition: all 0.5s;
+}
+
 .wrapper {
   max-width: calc(#{$content-width} - (#{$spacing-unit} * 2));
   margin-right: auto;
@@ -431,7 +445,6 @@ span.cursor {
   width: 100%;
 }
 
-/* (B) NOTIFICATION */
 #notify {
   padding: 10px;
   margin-bottom: 20px;
@@ -439,7 +452,6 @@ span.cursor {
   background: $headline-color;
 }
 
-/* (C) CONTACTFORM */
 #contactform {
   padding: 20px;
   border: 1px solid $grey-color;
@@ -482,7 +494,6 @@ span.cursor {
   background: $headline-color;
 }
 
-/* (C) SEARCHFORM */
 #searchform {
   padding: 20px;
   border: 1px solid $grey-color;
@@ -525,28 +536,10 @@ span.cursor {
     background: $headline-color;
 }
 
-/* SPINNER */
-/*Hidden class for adding and removing*/
 .lds-dual-ring.hidden {
   display: none;
 }
 
-/*Add an overlay to the entire page blocking any further presses to buttons or other elements.*/
-.overlay {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  min-width: 100%;
-  height: 100%;
-  min-height: 100%;
-  background: rgba(0,0,0,.8);
-  z-index: 999;
-  opacity: 1;
-  transition: all 0.5s;
-}
-
-/*Spinner Styles*/
 .lds-dual-ring {
   display: inline-block;
   width: 80px;
