@@ -2,7 +2,7 @@ all:
 	make release
 
 build:
-	git log -n48 --date='format:%F %H:%M' --pretty='format:<li>%ad - <a href="https://git.xw3.org/xw3/xw3.org/commit/%H">%s</a></li>' > gitlog.html
+	git log -n48 --date='format:%F %H:%M' --pretty='format:<li>%ad - <a href="https://git.xw3.org/xw3/xw3/commit/%H">%s</a></li>' > gitlog.html
 	jekyll b --incremental
 
 clean:

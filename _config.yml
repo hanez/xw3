@@ -24,7 +24,7 @@ timezone: CET/CEST
 charset: utf-8
 
 # Set to your git root to show a link to the file source in the footer. Unset to disable.
-git: https://git.xw3.org/xw3/xw3.org/src/branch/main/
+git: https://git.xw3.org/xw3/xw3/src/branch/main/
 
 lifetime: 3600
 
