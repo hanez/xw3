@@ -20,6 +20,8 @@ dl, dd, ol, ul, figure {
 
 body {
   background-color: $background-color;
+  background-image: url("/images/camouflage.jpg");
+  background-size: cover;
   color: $text-color;
   font-family: $base-font-family;
   font-size: $base-font-size;
