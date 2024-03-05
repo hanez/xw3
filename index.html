@@ -76,3 +76,9 @@ description: The xw3 CGI research project
   <li><a href="https://www.ruby-lang.org/en/">Ruby</a> - A dynamic, open source programming language with a focus on simplicity and productivity</li>
 </ul>
 
+{% if page.noComments != true %}
+<h2>Comments</h2>
+<section id="isso-thread"><noscript>Javascript needs to be activated to view comments.</noscript></section>
+<script data-isso="/comments" src="/comments/js/embed.min.js"></script>
+{% endif %}
+
