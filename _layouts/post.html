@@ -11,7 +11,12 @@ layout: default
     {% if page.date or page.date_updated %} ({{ site.timezone }}){% endif %}</p>
   </header>
   <article class="post-content">
-{{ content }}
+  {{ content }}
+  {% if page.noComments != true %}
+  <h2>Comments</h2>
+  <section id="isso-thread"><noscript>Javascript needs to be activated to view comments.</noscript></section>
+  <script data-isso="/comments" src="/comments/js/embed.min.js"></script>
+  {% endif %}
 <p>Permalink: <a href="{{ page.url }}" title="{{ site.url }}{{ page.url }}">{{ site.url }}{{ page.url }}</a></p>
   </article>
 </div>
