@@ -11,5 +11,5 @@ tags:
 
 ## Why Lua?
 
-Because this should be usable as a framework for embedded devices.
+Because xw3 should be usable as a framework for embedded devices.
 
