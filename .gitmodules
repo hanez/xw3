@@ -1,3 +1,6 @@
 [submodule "cgi"]
 	path = cgi
 	url = git@git.xw3.org:xw3/cgi.git
+[submodule "lib"]
+	path = lib
+	url = git@git.xw3.org:xw3/lib.git
