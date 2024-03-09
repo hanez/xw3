@@ -53,6 +53,7 @@ contentsLabel: Table of contents
 
 exclude:
   - .idea/
+  - lib/
   - venv/
   - .project
   - build.log
