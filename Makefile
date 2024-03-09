@@ -17,6 +17,11 @@ freshrun:
 	make clean
 	make run
 
+local:
+	make clean
+	make build
+	mkdir -p ./_site/.well-known/
+
 release:
 	make build
 	find ./_site -name "*.html" -exec minify --html-keep-document-tags --html-keep-end-tags -o {} {} \;
