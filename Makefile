@@ -56,10 +56,14 @@ runclean:
 	make clean
 	bundle exec jekyll s --incremental --drafts
 
+runcleanreload:
+	make clean
+	bundle exec jekyll s --incremental --drafts --livereload
+
+runreload:
+	bundle exec jekyll s --incremental --drafts --livereload
+
 sync:
 	rsync -avr --delete --delete-excluded ./_site/ xw3.org:/var/www/xw3.org/www/_site/
 	scp -r .well-known xw3.org:/var/www/xw3.org/www/_site/
-
-syncdev:
-	rsync -avr --delete --delete-excluded ./ xw3.org:/var/www/xw3.org/www/
 
