@@ -2,7 +2,7 @@ var _paq = window._paq = window._paq || [];
 _paq.push(['trackPageView']);
 _paq.push(['enableLinkTracking']);
 (function() {
-  var u="https://mtm.hanez.org/";
+  var u="https://mtm.xw3.org/";
   _paq.push(['setTrackerUrl', u+'matomo.php']);
   _paq.push(['setSiteId', '3']);
   var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
