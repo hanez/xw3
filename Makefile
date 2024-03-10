@@ -11,13 +11,21 @@ clean:
 
 freshrelease:
 	make clean
+	make minify
 	make release
 
 freshrun:
 	make clean
+	make minify
 	make run
 
 local:
+	make clean
+	make build
+	make minify
+	mkdir -p ./_site/.well-known/
+
+localraw:
 	make clean
 	make build
 	mkdir -p ./_site/.well-known/
