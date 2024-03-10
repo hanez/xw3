@@ -13,6 +13,7 @@ keywords:
   - php
   - python
   - ruby
+author: Johannes Findeisen
 email: mail@xw3.org
 description: A static HTML and CGI based website...
 baseurl:
