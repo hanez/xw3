@@ -3,7 +3,7 @@ all:
 
 build:
 	git log -n48 --date='format:%F %H:%M' --pretty='format:<li>%ad - <a href="https://git.xw3.org/xw3/xw3/commit/%H">%s</a></li>' > gitlog.html
-	jekyll b --incremental
+	bundle exec jekyll b --incremental
 
 clean:
 	rm -rf _site/*
@@ -42,11 +42,11 @@ releaseraw:
 	make sync
 
 run:
-	jekyll s --incremental --drafts
+	bundle exec jekyll s --incremental --drafts
 
 runclean:
 	make clean
-	jekyll s --incremental --drafts
+	bundle exec jekyll s --incremental --drafts
 
 sync:
 	rsync -avr --delete --delete-excluded ./_site/ xw3.org:/var/www/xw3.org/www/_site/

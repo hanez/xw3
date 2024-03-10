@@ -45,6 +45,7 @@ GEM
       nokogiri (~> 1.12)
     jekyll-watch (2.2.1)
       listen (~> 3.0)
+    json (2.7.1)
     kramdown (2.4.0)
       rexml
     kramdown-parser-gfm (1.1.0)
@@ -114,6 +115,7 @@ DEPENDENCIES
   jekyll-sitemap (= 1.4.0)
   jekyll-toc (= 0.18.0)
   jekyll-watch (= 2.2.1)
+  json (= 2.7.1)
   kramdown (= 2.4.0)
   kramdown-parser-gfm (= 1.1.0)
   liquid (= 4.0.4)
