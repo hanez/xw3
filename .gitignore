@@ -2,5 +2,6 @@
 .jekyll-cache/
 .jekyll-metadata
 _site/
+Gemfile.lock
 gitlog.html
 
