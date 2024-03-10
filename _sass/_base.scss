@@ -105,7 +105,8 @@ img.x {
 }
 
 ul, ol {
-  margin-left: calc($spacing-unit + 20px);
+  //margin-left: calc($spacing-unit + 20px);
+  margin-left: 40px;
 }
 
 li {
