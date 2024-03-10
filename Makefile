@@ -11,11 +11,18 @@ clean:
 
 freshrelease:
 	make clean
+	make build
 	make minify
-	make release
+	make sync
+
+freshreleaseraw:
+	make clean
+	make build
+	make sync
 
 freshrun:
 	make clean
+	make build
 	make minify
 	make run
 
@@ -45,7 +52,6 @@ release:
 	make sync
 
 releaseraw:
-	make clean
 	make build
 	make sync
 
