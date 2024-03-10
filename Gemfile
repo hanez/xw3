@@ -2,7 +2,7 @@
 
 source "https://rubygems.org"
 
-gem 'addressable', '2.8.6'
+gem 'addressable', '2.8.5'
 gem 'colorator', '1.1.0'
 gem 'concurrent-ruby', '1.2.2'
 gem 'em-websocket', '0.5.3'
@@ -19,14 +19,12 @@ gem 'kramdown-parser-gfm', '1.1.0'
 gem 'liquid', '4.0.4'
 gem 'listen', '3.8.0'
 gem 'mercenary', '0.4.0'
-gem 'nokogiro', '1.16.2'
-gem 'pathutil', '0.16.2'
 gem 'nokogiri', '1.16.2'
+gem 'pathutil', '0.16.2'
 gem 'rack', '3.0.9.1'
 gem 'rackup', '2.1.0'
 gem 'rouge', '4.2.0'
 gem 'safe_yaml', '1.0.5'
 gem 'terminal-table', '3.0.2'
 gem 'webrick', '1.8.1'
-gem 'addressable', '2.8.5'
 
