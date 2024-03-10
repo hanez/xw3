@@ -22,11 +22,18 @@ local:
 	make build
 	mkdir -p ./_site/.well-known/
 
-release:
-	make build
+localrelease:
+	make local
+	make minify
+
+minify:
 	find ./_site -name "*.html" -exec minify --html-keep-document-tags --html-keep-end-tags -o {} {} \;
 	find ./_site -name "*.css" -exec minify --css-precision 0 -o {} {} \;
 	find ./_site -name "*.xml" -exec minify -o {} {} \;
+
+release:
+	make build
+	make minify
 	make sync
 
 releaseraw:
