@@ -16,13 +16,13 @@ description: The xw3 CGI research project
 <div class="post">
   <header class="post-header">
     <h1 class="post-title" id="terminal">{{ site.url_short }}:{{ page.title }}<a href="./">./</a></h1>
-    <p>{{ page.subtitle }}</p>
+    <p style="padding: 0px 0px 0px 0px;">{{ page.subtitle }}</p>
   </header>
 </div>
 
 <h2>About</h2>
 
-<div style="padding:0px 8px 0px 8px;">
+<div>
   <p>xw3.org is mostly a template for <a href="https://jekyllrb.com/">Jekyll</a> based websites <b style="color:green;">PLUS</b> a <a href="https://www.lua.org/">Lua</a> based <a href="https://git.xw3.org/xw3/cgi">CGI</a> directory for adding dynamic features like a <a href="/contact/">contact</a> form (other languages are supported too). Additionally there is a <a href="https://git.xw3.org/xw3/xw3.org/src/branch/main/Makefile">Makefile</a> included for easy deployment of the website.</p>
 
   <p>Just an idea... not more! A dynamic website like in the 90's, with some little JavaScript sugar. No rocket science... ;)</p>
@@ -34,7 +34,7 @@ description: The xw3 CGI research project
 
 {% if page.url == "/" %}
 {% for post in site.tags.pinned %}
-<article class="post-content" style="padding:0px 8px 0px 8px;">
+<article class="post-content">
 <h3><a href="{{ post.url }}" title="{{ post.title }}">{{ post.url }}</a> <span style="cursor:help; float: right;" title="Pinned Post!">📌</span></h3>
 <p class="post-meta">{{ post.date | date: "%b %-d, %Y" }}
 {% if post.date_updated %} - Updated: {{ post.date_updated | date: "%b %-d, %Y" }}{% endif %} ({{ site.timezone }})</p>
@@ -45,7 +45,7 @@ description: The xw3 CGI research project
 
 {% for post in site.posts %}
 {% unless post.tags contains 'pinned' %}
-<article class="post-content" style="padding:0px 8px 0px 8px;">
+<article class="post-content">
 <h3><a href="{{ post.url }}" title="{{ post.title }}">{{ post.url }}</a></h3>
 <p class="post-meta">{{ post.date | date: "%b %-d, %Y" }}
 {% if post.date_updated %} - Updated: {{ post.date_updated | date: "%b %-d, %Y" }}{% endif %} ({{ site.timezone }})</p>

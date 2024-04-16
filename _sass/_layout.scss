@@ -153,3 +153,357 @@
 .post-content img {
 }
 
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  min-width: 100%;
+  height: 100%;
+  min-height: 100%;
+  background: rgba(0,0,0,.8);
+  z-index: 999;
+  opacity: 1;
+  transition: all 0.5s;
+}
+
+.wrapper {
+  max-width: calc(#{$content-width} - (#{$spacing-unit} * 2));
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: $spacing-unit;
+  padding-left: $spacing-unit;
+  padding-top: calc($spacing-unit / 2);
+  padding-bottom: 0;
+  @extend %clearfix;
+  @include media-query($on-laptop) {
+    max-width: calc(#{$content-width} - (#{$spacing-unit}));
+      padding-right: calc($spacing-unit / 2);
+      padding-left: calc($spacing-unit / 2);
+  }
+}
+
+%clearfix {
+  &:after {
+    content: "";
+      display: table;
+      clear: both;
+  }
+}
+
+.icon {
+  > svg {
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    vertical-align: middle;
+    path {
+      fill: $grey-color;
+    }
+  }
+}
+
+.pagination a, span {
+  margin-left: 4px;
+  margin-right: 4px;
+}
+
+a.ext::after {
+  content: "\f08e";
+  font-family: "ForkAwesome";
+  padding-left: 5px;
+  color: $brand-color-light;
+  text-decoration: none;
+}
+
+a.mail::after,
+span.mail::after {
+  content: "\f0e0";
+  font-family: "ForkAwesome";
+  padding-left: 5px;
+  color: $brand-color-light;
+}
+
+a.document {
+  content: "\f15b";
+  font-family: "ForkAwesome";
+  padding-left: 5px;
+  color: $brand-color-light;
+}
+
+a.cube::after {
+  content: "\f1b2";
+  font-family: "ForkAwesome";
+  padding-left: 5px;
+  color: $brand-color-light;
+}
+
+a.file::after {
+  content: "\f0c7";
+  font-family: "ForkAwesome";
+  padding-left: 5px;
+  color: $brand-color-light;
+}
+
+a.person::after {
+  content: "\f007";
+  font-family: "ForkAwesome";
+  padding-left: 5px;
+  color: $brand-color-light;
+}
+
+a.chat::after,
+span.chat::after {
+  content: "\f075";
+  font-family: "ForkAwesome";
+  padding-left: 5px;
+  color: $brand-color-light;
+}
+
+span.feed {
+  border: 1px solid;
+  border-color: #FC9 #630 #330 #F96;
+  padding: 0 3px;
+  font: bold 0.4em sans-serif;
+  color: #fff;
+  background: #f60;
+  text-decoration: none;
+  margin: 0;
+}
+
+#topbutton {
+  text-align: center;
+  padding: 0;
+  width: 46px;
+  height: 46px;
+  background: $topbutton-color url(/images/up-arrow.png) no-repeat center center;
+  border: 1px solid $grey-color-dark;
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  cursor: pointer;
+}
+
+span.cursor {
+  color: #FF9500;
+  display: inline-block;
+  background: transparent;
+  margin-left: 1px;
+  animation: 1s blink step-end infinite;
+}
+
+@keyframes "blink" bold {
+  from, to {
+    color: transparent;
+  }
+  50% {
+    color: black;
+  }
+}
+
+@-webkit-keyframes "blink" bold {
+  from, to {
+    color: transparent;
+  }
+  50% {
+    color: black;
+  }
+}
+
+@-ms-keyframes "blink" bold {
+  from, to {
+    color: transparent;
+  }
+  50% {
+    color: black;
+  }
+}
+
+@-o-keyframes "blink" {
+  from, to {
+    color: transparent;
+  }
+  50% {
+    color: black;
+  }
+}
+
+#pages {
+  text-align: center;
+}
+
+#pages a:link,
+#pages a:visited,
+#pages strong {
+  float: left;
+  width: 1.8em;
+  border: 1px solid #000;
+  font-weight: bold;
+  text-decoration: none;
+  text-align: center;
+  margin: 0px 4px 4px 0;
+  padding: 2px;
+  background: $brand-color;
+  color: #fff;
+}
+
+#pages > a.active {
+  color: $grey-color-light;
+  background: #fff;
+  border-color: $grey-color;
+}
+
+#pages a:focus,
+#pages a:hover,
+#pages a:active {
+  color: $hover-color;
+  background: #fff;
+}
+
+#pages p {
+  float: left;
+  width: 100%;
+}
+
+#notify {
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid $grey-color;
+  background: $headline-color;
+}
+
+#contactform {
+  padding: 20px;
+  border: 1px solid $grey-color;
+  background: $grey-color-light;
+}
+
+#contactform label, #contactform input, #contactform textarea {
+  display: block;
+  width: 97%;
+  resize: none;
+}
+
+#contactform textarea {
+  height: 120px;
+}
+
+#contactform label { margin: 10px 0; }
+
+#contactform label:first-child { margin-top: 0; }
+
+#contactform input, #contactform textarea {
+  font-family: $base-font-family;
+  font-size: $base-font-size;
+  line-height: $base-line-height;
+  font-weight: 300;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid $grey-color;
+}
+
+#contactform input[type=submit] {
+  border: 0;
+  color: #fff;
+  background: $brand-color;
+  cursor: pointer;
+  width: 100%;
+}
+
+#contactform input[type=submit]:hover {
+  background: $headline-color;
+}
+
+#searchform {
+  padding: 20px;
+  border: 1px solid $grey-color;
+  background: $grey-color-light;
+}
+
+#searchform label, #searchform input, #searchform textarea {
+  display: block;
+  width: 97%;
+  resize: none;
+}
+
+#searchform textarea {
+  height: 120px;
+}
+
+#searchform label { margin: 10px 0; }
+
+#searchform label:first-child { margin-top: 0; }
+
+#searchform input, #searchform textarea {
+  font-family: $base-font-family;
+  font-size: $base-font-size;
+  line-height: $base-line-height;
+  font-weight: 300;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid $grey-color;
+}
+
+#searchform input[type=submit] {
+  border: 0;
+  color: #fff;
+  background: $brand-color;
+  cursor: pointer;
+  width: 100%;
+}
+
+#searchform input[type=submit]:hover {
+    background: $headline-color;
+}
+
+.lds-dual-ring.hidden {
+  display: none;
+}
+
+.lds-dual-ring {
+  display: inline-block;
+  width: 80px;
+  height: 80px;
+}
+.lds-dual-ring:after {
+  content: " ";
+  display: block;
+  width: 64px;
+  height: 64px;
+  margin: 5% auto;
+  border-radius: 50%;
+  border: 6px solid #fff;
+  border-color: #fff transparent #fff transparent;
+  animation: lds-dual-ring 1.2s linear infinite;
+}
+@keyframes lds-dual-ring {
+  0% {
+   transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+#terminal::before {
+  content: "";
+}
+@media (prefers-reduced-motion: no-preference) {
+    @keyframes flash {
+    50% { opacity: 0; }
+  }
+  @keyframes reveal {
+    from { width: 2em; }
+    to { width: 100%; }
+  }
+  #terminal {
+    animation: reveal 6s linear;
+    overflow: hidden;
+    text-overflow: "▉";
+    white-space: nowrap;
+  }
+  #terminal::after {
+    animation: flash 1.5s step-end infinite;
+    content: "▉";
+  }
+}
