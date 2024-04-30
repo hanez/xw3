@@ -12,15 +12,9 @@ tags:
 - cgi
 ---
 
-<script>
-$(document).ready(function(){
-  $("#bin").load("/cgi/index");
-});
-</script>
-
 <h2>Bin output</h2>
 
-<pre><span id="bin" name="bin">NULL</span></pre>
+<pre><span id="cgi-bin" name="cgi-bin">NULL</span></pre>
 
 <p>Source: <a href="https://git.xw3.org/xw3/cgi/src/branch/main/index.c">https://git.xw3.org/xw3/cgi/src/branch/main/index.c</a></p>
 
@@ -29,4 +23,10 @@ $(document).ready(function(){
 <ul>
   <li><a href="{{ site.url }}/cgi/index">{{ site.url }}/cgi/index</a></li>
 </ul>
+
+<script>
+$(document).ready(function(){
+  $("#cgi-bin").load("/cgi/index");
+});
+</script>
 

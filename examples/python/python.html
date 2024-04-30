@@ -11,15 +11,9 @@ tags:
 - cgi
 ---
 
-<script>
-$(document).ready(function(){
-  $("#python").load("/cgi/python/");
-});
-</script>
-
 <h2>Python output</h2>
 
-<pre><span id="python" name="python">NULL</span></pre>
+<pre><span id="cgi-python" name="cgi-python">NULL</span></pre>
 
 <p>Source: <a href="https://git.xw3.org/xw3/cgi/src/branch/main/python/python.py">https://git.xw3.org/xw3/cgi/src/branch/main/python/python.py</a></p>
 
@@ -34,4 +28,10 @@ $(document).ready(function(){
 <ul>
   <li><a href="https://www.python.org/">Python</a> - A programming language that lets you work quickly</li>
 </ul>
+
+<script>
+$(document).ready(function(){
+  $("#cgi-python").load("/cgi/python/");
+});
+</script>
 

@@ -14,19 +14,19 @@ tags:
 - whoami
 ---
 
-<script>
-$(document).ready(function(){
-  $("#whoami").load("/cgi/whois/");
-});
-</script>
-
 <h2>Your IP whois data</h2>
 
-<pre><span id="whoami" name="whoami">NULL</span></pre>
+<pre><span id="cgi-whoami" name="cgi-whoami">NULL</span></pre>
 
 <h2>API</h2>
 
 <ul>
   <li><a href="{{ site.url }}/cgi/whois/">{{ site.url }}/cgi/whois/</a> - whois accepts a host variable via GET or POST. E.g.: <a href="https://hanez.org/cgi/whois/?host=127.0.0.1">{{ site.url }}/cgi/whois/?host=127.0.0.1</a>. It can be a hostname or IP. If no host is set your current IP is being used</li>
 </ul>
+
+<script>
+$(document).ready(function(){
+  $("#cgi-whoami").load("/cgi/whois/");
+});
+</script>
 

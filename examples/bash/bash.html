@@ -11,15 +11,9 @@ tags:
 - cgi
 ---
 
-<script>
-$(document).ready(function(){
-  $("#bash").load("/cgi/bash/");
-});
-</script>
-
 <h2>Bash output</h2>
 
-<pre><span id="bash" name="bash">NULL</span></pre>
+<pre><span id="cgi-bash" name="cgi-bash">NULL</span></pre>
 
 <p>Source: <a href="https://git.xw3.org/xw3/cgi/src/branch/main/bash/bash.sh">https://git.xw3.org/xw3/cgi/src/branch/main/bash/bash.sh</a></p>
 
@@ -34,4 +28,10 @@ $(document).ready(function(){
 <ul>
   <li><a href="https://www.gnu.org/software/bash/">Bash</a> - The <a href="https://www.gnu.org/">GNU Project</a>'s shell</li>
 </ul>
+
+<script>
+$(document).ready(function(){
+  $("#cgi-bash").load("/cgi/bash/");
+});
+</script>
 

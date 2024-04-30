@@ -11,19 +11,19 @@ tags:
 - ifconfig
 ---
 
-<script>
-$(document).ready(function(){
-  $("#ifconfig").load("/cgi/ifconfig/");
-});
-</script>
-
 <h2>Your IP address</h2>
 
-<pre><span id="ifconfig" name="ifconfig">NULL</span></pre>
+<pre><span id="cgi-ifconfig" name="cgi-ifconfig">NULL</span></pre>
 
 <h2>API</h2>
 
 <ul>
   <li><a href="{{ site.url }}/cgi/ifconfig/">{{ site.url }}/cgi/ifconfig/</a> - Just returns your public IP</li>
 </ul>
+
+<script>
+$(document).ready(function(){
+  $("#cgi-ifconfig").load("/cgi/ifconfig/");
+});
+</script>
 

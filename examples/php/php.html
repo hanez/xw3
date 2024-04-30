@@ -11,15 +11,9 @@ tags:
 - cgi
 ---
 
-<script>
-$(document).ready(function(){
-  $("#php").load("/cgi/php/");
-});
-</script>
-
 <h2>PHP output</h2>
 
-<pre><span id="php" name="php">NULL</span></pre>
+<pre><span id="cgi-php" name="cgi-php">NULL</span></pre>
 
 <p>Source: <a href="https://git.xw3.org/xw3/cgi/src/branch/main/php/php.php">https://git.xw3.org/xw3/cgi/src/branch/main/php/php.php</a></p>
 
@@ -34,4 +28,10 @@ $(document).ready(function(){
 <ul>
   <li><a href="https://www.php.net/">PHP</a> - A popular general-purpose scripting language for web development</li>
 </ul>
+
+<script>
+$(document).ready(function(){
+  $("#cgi-php").load("/cgi/php/");
+});
+</script>
 

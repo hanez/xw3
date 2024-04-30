@@ -20,13 +20,13 @@ layout:
   </div>
   <p style="text-align: center; color: #e8e8e8; font-size: 12px;">
   Page generated at: {{ site.time | date: "%b %-d, %Y" }} ({{ site.timezone }}) using Jekyll & xw3 on {{ site.os }}<br>
-  Powered by: lighttpd <span id="lighttpd"></span> on Linux <span id="linux"></span>
+  Powered by: lighttpd <span id="cgi-lighttpd"></span> on Linux <span id="cgi-linux"></span>
   </p>
 
   <script>
   $(document).ready(function(){
-    $("#lighttpd").load("/cgi/lighttpd/");
-    $("#linux").load("/cgi/linux/");
+    $("#cgi-lighttpd").load("/cgi/lighttpd/");
+    $("#cgi-linux").load("/cgi/linux/");
   });
   </script>
 
