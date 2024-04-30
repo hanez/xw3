@@ -9,9 +9,25 @@ permalink: /documentation/
 
 ## Getting started
 
+TODO
+
 ## Installation
+
+TODO
 
 ### Requirements
 
+TODO
 
+## Configuration
+
+TODO
+
+### lighttpd
+
+TODO
+
+### nginx
+
+TODO
 
