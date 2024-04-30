@@ -21,7 +21,7 @@ url: https://xw3.org
 url_short: xw3.org
 lang: en
 os: GNU/Linux
-timezone: CET/CEST
+timezone: CEST
 charset: utf-8
 libdir: /var/www/xw3.org/www/lib
 
