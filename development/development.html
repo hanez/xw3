@@ -11,23 +11,11 @@ permalink: /development/
 
 <ul id="gitlog" name="gitlog" style="font-family: CourierPrimeSans;">NULL</ul>
 
-<script>
-$(document).ready(function(){
-  $("#gitlog").load("/cgi/gitlog/");
-});
-</script>
-
 <p style="text-align:right;"><a href="{{ site.git }}commits/branch/main">[View full git log]</a></p>
 
 <h2>The xw3 cgi Git log</h2>
 
 <ul id="gitlog_cgi" name="gitlog_cgi" style="font-family: CourierPrimeSans;">NULL</ul>
-
-<script>
-$(document).ready(function(){
-  $("#gitlog_cgi").load("/cgi/gitlog_cgi/");
-});
-</script>
 
 <p style="text-align:right;"><a href="https://git.xw3.org/xw3/cgi/commits/branch/main">[View full git log]</a></p>
 
@@ -35,11 +23,13 @@ $(document).ready(function(){
 
 <ul id="gitlog_lib" name="gitlog_lib" style="font-family: CourierPrimeSans;">NULL</ul>
 
+<p style="text-align:right;"><a href="https://git.xw3.org/xw3/lib/commits/branch/main">[View full git log]</a></p>
+
 <script>
 $(document).ready(function(){
+  $("#gitlog").load("/cgi/gitlog/");
+  $("#gitlog_cgi").load("/cgi/gitlog_cgi/");
   $("#gitlog_lib").load("/cgi/gitlog_lib/");
 });
 </script>
-
-<p style="text-align:right;"><a href="https://git.xw3.org/xw3/lib/commits/branch/main">[View full git log]</a></p>
 
