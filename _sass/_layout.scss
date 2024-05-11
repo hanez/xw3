@@ -30,56 +30,46 @@
 
 .site-nav {
     float: right;
-    //line-height: 68px;
-    //.menu-icon {
-    //    display: none;
-    //}
     z-index: 998;
-    .page-link {
-        color: $text-color;
-        line-height: $base-line-height;
-        // Gaps between nav items, but not on the first one
-        &:not(:first-child) {
-            //margin-left: 12px;
-        }
+    position: absolute;
+    top: 18px;
+    right: 18px;
+    background-color: white;
+    border: 1px solid $brand-color;
+    //border-radius: 6px;
+    text-align: right;
+    text-decoration: none;
+    .menu-icon {
+        display: block;
+        float: right;
+        width: 36px;
+        height: 26px;
+        line-height: 0;
+        padding-top: 10px;
+        text-align: center;
+        text-decoration: none;
+        //> svg {
+        //    width: 18px;
+        //    height: 15px;
+        //    path {
+        //        fill: $grey-color-dark;
+        //    }
+        //}
     }
-    //@include media-query($on-palm) {
-        position: absolute;
-        top: 18px;
-        right: 18px;
-        background-color: white;
-        border: 1px solid $brand-color;
-        //border-radius: 6px;
-        text-align: right;
-        .menu-icon {
-            display: block;
-            float: right;
-            width: 36px;
-            height: 26px;
-            line-height: 0;
-            padding-top: 10px;
-            text-align: center;
-            > svg {
-                width: 18px;
-                height: 15px;
-                path {
-                    fill: $grey-color-dark;
-                }
-            }
-        }
-        .trigger {
-            clear: both;
-            display: none;
-        }
-        &:hover .trigger {
-            display: block;
-            padding-bottom: 5px;
-        }
-        .page-link {
-            display: block;
-            padding: 5px 10px;
-        }
-    //}
+    .trigger {
+        clear: both;
+        display: none;
+    }
+    &:hover .trigger {
+        display: block;
+        //padding-bottom: 5px;
+        //text-decoration: none;
+        //color: $brand-color;
+    }
+    .page-link {
+        display: block;
+        padding: 5px 10px;
+    }
 }
 
 .site-footer {
