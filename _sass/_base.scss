@@ -118,9 +118,14 @@ a:active {
   text-decoration: none;
 }
 
+a.ext:after {
+  content: "&#128279";
+  font-size: 14px;
+}
+
 p {
   //text-align: justify;
-  padding: 0px 0px 0px 0px;
+  padding: 0px 0px 14px 0px;
 }
 
 blockquote {
