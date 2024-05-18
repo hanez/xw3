@@ -1,4 +1,5 @@
 document_root: /var/www/xw3.org/www/_site/
+data_dir: /var/www/xw3.org/www/_data/
 title: xw3.org
 org: xw3.org
 subtitle: Extending the world wide web

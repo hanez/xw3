@@ -1,0 +1,46 @@
+---
+layout: page
+published: true
+noToc: true
+noDate: true
+title: /examples/kernelstats/
+subtitle: Some <a href="https://kernel.org/">Linux Kernel</a> development statistics. This site shows you the top 50 authors in Linux Kernel development of each current stable and longterm releases.
+permalink: /examples/kernelstats/
+tags:
+- bash
+- cgi
+- kernel
+- development
+- stats
+- statistics
+---
+
+<span id="cgi-kernelstats" name="cgi-kernelstats">NULL</span>
+
+<p>Source: <a href="https://git.xw3.org/xw3/cgi/src/branch/main/kernelstats/kernelstats.sh">https://git.xw3.org/xw3/cgi/src/branch/main/kernelstats/kernelstats.sh</a></p>
+
+<h2>API</h2>
+
+<ul>
+  <li><a href="{{ site.url }}/cgi/kernelstats/">{{ site.url }}/cgi/kernelstats/</a></li>
+</ul>
+
+<h2>Links</h2>
+
+<ul>
+  <li><a href="https://kernel.org/">The Linux Kernel</a></li>
+</ul>
+
+<script>
+$(document).ready(function(){
+  $("#loader").removeClass("hidden");
+  $("#cgi-kernelstats").load("/cgi/kernelstats/", function(response, status, xhr) {
+    if (status == "error") {
+      var msg = "Sorry but there was an error loading the data! ";
+      $("#cgi-kernelstats").html(msg + "(" + xhr.status + " " + xhr.statusText + ")");
+    }
+    $("#loader").addClass("hidden");
+  });
+});
+</script>
+
