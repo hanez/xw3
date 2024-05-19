@@ -24,7 +24,7 @@ lang: en
 os: GNU/Linux
 timezone: CEST
 charset: utf-8
-libdir: /var/www/xw3.org/www/lib
+libdir: /var/www/xw3.org/www/_site/lib
 
 # Set to your git root and branch to show a link to the file source in the footer. Unset to disable.
 git: https://git.xw3.org/xw3/xw3.org/
@@ -56,7 +56,7 @@ contentsLabel: Table of contents
 
 exclude:
   - .idea/
-  - lib/
+  #- lib/
   - venv/
   - .project
   - build.log
@@ -89,7 +89,7 @@ defaults:
     values:
       sitemap: false
 
-# Configuration vars for the cgi/kernstats/kernelstats.sh script:
+# Configuration vars for the cgi/kernelstats/kernelstats.sh script:
 r_6_9: 1
 r_6_8: 10
 r_6_6: 31
