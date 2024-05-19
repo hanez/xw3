@@ -73,5 +73,6 @@ runreload:
 
 sync:
 	rsync -avr --delete --delete-excluded ./_site/ xw3.org:/var/www/xw3.org/www/_site/
+	ssh a.xw3.org 'cd /var/www/xw3.org/www/lib/ && git pull'
 	ssh a.xw3.org 'cd /var/www/xw3.org/www/_site/cgi/bin/ && gcc index.c -o index'
 

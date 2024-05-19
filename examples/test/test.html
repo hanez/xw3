@@ -1,0 +1,26 @@
+---
+layout: page
+published: true
+noToc: true
+noDate: true
+title: /examples/test/
+subtitle:
+permalink: /examples/test/
+tags:
+- bash
+- cgi
+---
+
+<h2>Test output</h2>
+
+<h3>Cookies</h3>
+
+<p><span id="cgi-test" name="cgi-test">NULL</span></p>
+
+<script>
+$(document).ready(function(){
+  $("#cgi-test").html("KEY=" + Cookies.get("KEY") + " (Set by the server via HTTP-Header. By requesting /examples/test/ a second Cookie (KEY2) ist set by the Client for testing.)");
+  Cookies.set("KEY2", "VALUE2")
+});
+</script>
+
