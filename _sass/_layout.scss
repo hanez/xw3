@@ -533,11 +533,12 @@ span.cursor {
   }
 }
 
-#isso-postbox-author, #isso-postbox-email, #isso-postbox-website, .isso-post-action > input, .isso-textarea {
+#isso-postbox-author, #isso-postbox-email, #isso-postbox-website, .isso-post-action input, .isso-textarea {
+  border-radius: 0;
   font-family: $base-font-family;
   font-size: $base-font-size;
 }
-.isso-post-action > input[type=button], .isso-post-action > input[type=submit] {
+.isso-post-action input[type=button], .isso-post-action input[type=submit] {
   border: 0;
   color: #fff;
   background: $brand-color;
@@ -546,7 +547,7 @@ span.cursor {
   padding: 6px 18px 6px 18px;
   width: 100%;
 }
-.isso-post-action > input[type=button]:hover, .isso-post-action > input[type=submit]:hover {
+.isso-post-action input[type=button]:hover, .isso-post-action input[type=submit]:hover {
   background: $headline-color;
 }
 
