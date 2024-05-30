@@ -56,11 +56,11 @@
         //    }
         //}
         > span {
-          align-items: center; 
-          justify-content: center; 
-          display: flex; 
-          flex-direction: column; 
-          font-size: 24px; 
+          align-items: center;
+          justify-content: center;
+          display: flex;
+          flex-direction: column;
+          font-size: 24px;
           padding-top: 10px;
         }
     }
@@ -80,31 +80,31 @@
     }
 }
 
-/*.ham-menu { 
-  display: inline-block; 
-  position: relative; 
-  margin: 2px 0; 
+/*.ham-menu {
+  display: inline-block;
+  position: relative;
+  margin: 2px 0;
 }
 
-.ham-menu, .ham-menu::before, .ham-menu::after { 
-  width: 100px; 
-  height: 20px; 
-  border-radius: 7px; 
-  background-color: black; 
+.ham-menu, .ham-menu::before, .ham-menu::after {
+  width: 100px;
+  height: 20px;
+  border-radius: 7px;
+  background-color: black;
 }
 
-.ham-menu::before, .ham-menu::after { 
-  content: ""; 
-  display: block; 
-  position: absolute; 
+.ham-menu::before, .ham-menu::after {
+  content: "";
+  display: block;
+  position: absolute;
 }
 
-.ham-menu::before { 
-  bottom: 130%; 
-} 
+.ham-menu::before {
+  bottom: 130%;
+}
 
-.ham-menu::after { 
-  top: 130%; 
+.ham-menu::after {
+  top: 130%;
 }*/
 
 .site-footer {
@@ -532,3 +532,21 @@ span.cursor {
     content: "▉";
   }
 }
+
+#isso-postbox-author, #isso-postbox-email, #isso-postbox-website, .isso-post-action > input, .isso-textarea {
+  font-family: $base-font-family;
+  font-size: $base-font-size;
+}
+.isso-post-action > input[type=button], .isso-post-action > input[type=submit] {
+  border: 0;
+  color: #fff;
+  background: $brand-color;
+  cursor: pointer;
+  margin-top: 3px;
+  padding: 6px 18px 6px 18px;
+  width: 100%;
+}
+.isso-post-action > input[type=button]:hover, .isso-post-action > input[type=submit]:hover {
+  background: $headline-color;
+}
+
