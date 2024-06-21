@@ -90,12 +90,12 @@ defaults:
       sitemap: false
 
 # Configuration vars for the cgi/kernelstats/kernelstats.sh script:
-r_6_9: 3
+r_6_9: 6
 r_6_8: 12
-r_6_6: 32
-r_6_1: 92
-r_5_15: 160
-r_5_10: 218
-r_5_4: 277
-r_4_19: 315
+r_6_6: 35
+r_6_1: 95
+r_5_15: 161
+r_5_10: 220
+r_5_4: 278
+r_4_19: 316
 
