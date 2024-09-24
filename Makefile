@@ -2,7 +2,7 @@ all:
 	make release
 
 build:
-	git log -n24 --date='format:%F %H:%M' --pretty='format:<li>%ad - <a href="https://git.xw3.org/xw3/xw3.org/commit/%H">%s</a></li>' > gitlog.html
+	git log -n24 --date='format:%F %H:%M' --pretty='format:<li>%ad - <a href="https://git.xw3.org/xw3/xw3/commit/%H">%s</a></li>' > gitlog.html
 	cd cgi && git log -n24 --date='format:%F %H:%M' --pretty='format:<li>%ad - <a href="https://git.xw3.org/xw3/cgi/commit/%H">%s</a></li>' > ../gitlog_cgi.html && cd ..
 	cd lib && git log -n24 --date='format:%F %H:%M' --pretty='format:<li>%ad - <a href="https://git.xw3.org/xw3/lib/commit/%H">%s</a></li>' > ../gitlog_lib.html && cd ..
 	bundle exec jekyll b --incremental
