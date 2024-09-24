@@ -19,16 +19,16 @@ layout:
 {% include footer.html %}
   </div>
   <p style="text-align: center; color: #e8e8e8; font-size: 12px;">
-  Page generated at: {{ site.time | date: "%b %-d, %Y" }} ({{ site.timezone }}) using Jekyll & xw3 on {{ site.os }}<br>
+  Page generated at: {{ site.time | date: "%b %-d, %Y" }} ({{ site.time | date: "%Z" }}) using xw3 on {{ site.os }}<br>
+  Server uptime: <span id="cgi-uptime">NULL</span><br>
   Powered by: lighttpd <span id="cgi-lighttpd"></span> on Linux <span id="cgi-linux"></span><br>
-  Server uptime: <span id="cgi-uptime">NULL</span>
   </p>
 
   <script>
   $(document).ready(function(){
     $("#cgi-lighttpd").load("/cgi/lighttpd/");
-    $("#cgi-linux").load("/cgi/linux/");
     $("#cgi-uptime").load("/cgi/uptime/");
+    $("#cgi-linux").load("/cgi/linux/");
   });
   </script>
 

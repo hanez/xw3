@@ -10,13 +10,8 @@ tags:
 - env
 - environment
 - cgi
-- bash
-- gcc
-- zsh
-- perl
+- fastcgi
 - php
-- python
-- ruby
 - test
 ---
 

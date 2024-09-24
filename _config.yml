@@ -1,8 +1,9 @@
 document_root: /var/www/xw3.org/www/_site/
 data_dir: /var/www/xw3.org/www/_data/
-title: xw3.org
+title: xw3
 org: xw3.org
-subtitle: Extending the world wide web
+subtitle: Extending the World Wide Web
+description: xw3 is a framework for building static web based applications using a CGI and JavaScript to implement dynamic features. The static website generator we use is <a href="https://jekyllrb.com/" class="ext">Jekyll</a>. Look at the <a href="/examples/">examples</a> page! Additionally there is a <a href="https://git.xw3.org/xw3/xw3/src/branch/main/Makefile">Makefile</a> included for easy deployment of the website.
 keywords:
   - xw3
   - static
@@ -14,15 +15,17 @@ keywords:
   - php
   - python
   - ruby
+  - c
+  - c++
+  - bash
+  - www
 author: Johannes Findeisen <you@hanez.org>
 email: mail@xw3.org
-description: A static HTML and CGI based website...
 baseurl:
 url: https://xw3.org
 url_short: xw3.org
 lang: en
 os: GNU/Linux
-timezone: CEST
 charset: utf-8
 libdir: /var/www/xw3.org/www/_site/lib
 
