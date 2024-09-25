@@ -11,9 +11,8 @@
 html {
 }
 
-body, h1, h2, h3, h4, h5, h6,
-p, blockquote, pre, hr,
-dl, dd, ol, ul, figure {
+body, h1, h2, h3, h4, h5, h6, p, code, blockquote,
+pre, hr, dl, dd, ol, ul, figure, span {
   margin: 0;
   padding: 0;
 }
@@ -31,10 +30,12 @@ body {
 
 h1, h2, h3, h4, h5, h6 {
   color: $headline-color;
-  font-family: "CourierPrimeSans";
+  padding-top: 18px;
 }
 
 h1 {
+  color: $headline-color;
+  padding-top: 0px;
 }
 
 h2 {
@@ -45,10 +46,6 @@ h2 {
   }
 }
 
-h3 {
-  padding-top: 8px;
-}
-
 img {
   max-width: 100%;
   vertical-align: middle;
@@ -56,7 +53,7 @@ img {
 
 img.l {
   border: 0;
-  float:left;
+  float: left;
   margin: 6px 16px 0 0;
   padding: 0;
 }
@@ -71,11 +68,9 @@ img.r {
 img.x {
   max-width: 99.8%;
   border: 1px solid #000;
-  //border-radius: 12px 12px;
 }
 
 ul, ol {
-  //margin-left: calc($spacing-unit + 20px);
   margin-left: 25px;
 }
 
@@ -117,7 +112,6 @@ a.ext:after {
 }
 
 p {
-  //text-align: justify;
   padding: 0px 0px 14px 0px;
 }
 
@@ -135,7 +129,7 @@ blockquote {
 
 pre {
   -moz-tab-size: 2;
-  border: 1px $grey-color solid;
+  border: 0px $grey-color solid;
   background: $grey-color-dark;
   background-image: -webkit-linear-gradient($grey-color-dark 50%, $grey-color-light 50%);
   background-image: -moz-linear-gradient($grey-color-dark 50%, $grey-color-light 50%);
@@ -187,7 +181,8 @@ table {
   border-collapse: collapse;
 }
 
-table > thead > tr {}
+table > thead > tr {
+}
 
 table > thead > tr > th {
   background: #293e58;
