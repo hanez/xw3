@@ -13,15 +13,25 @@ tags:
 - development
 - stats
 - statistics
+# Configuration vars for the /cgi/kernelstats/kernelstats.sh script:
+r_6_10: 11
+r_6_9: 12
+r_6_8: 12
+r_6_6: 52
+r_6_1: 111
+r_5_15: 167
+r_5_10: 226
+r_5_4: 284
+r_4_19: 322
 ---
 
 <p><img src="/images/tux-small.png" class="r">This site shows you the top 50 authors in Linux Kernel development of each current stable and longterm releases. The data is beeing generated from the ChangeLog files provided at <a href="https://kernel.org/">kernel.org</a>.</p>
 
-<p>The data shown below is generated on-the-fly using a Bash/CGI script. It parses around 195MB of data very fast using only Shell code and standard Linux/UNIX utilities like cat, cut, grep, head, sed, sort and uniq. Think of doing this using PHP - maybe using a bloated MVC framework - is a bad idea and I believe this will fail in performance... ;) The code is available here: <a href="https://git.xw3.org/xw3/cgi/src/branch/main/kernelstats/kernelstats.sh">https://git.xw3.org/xw3/cgi/src/branch/main/kernelstats/kernelstats.sh</a></p>
+<p>The data shown below is generated on-the-fly using a Bash/CGI script. It parses around 195MB of data very fast using only Shell code and standard Linux/UNIX utilities like cat, cut, grep, head, sed, sort and uniq. Think of doing this using PHP - maybe using a bloated MVC framework - is a bad idea and I believe this will fail in performance... ;) The code is available here: <a href="https://git.xw3.org/xw3/cgi/src/branch/main/kernelstats/kernelstats.bash">https://git.xw3.org/xw3/cgi/src/branch/main/kernelstats/kernelstats.bash</a></p>
 
 <span id="cgi-kernelstats" name="cgi-kernelstats">NULL</span>
 
-<p>Source: <a href="https://git.xw3.org/xw3/cgi/src/branch/main/kernelstats/kernelstats.sh">https://git.xw3.org/xw3/cgi/src/branch/main/kernelstats/kernelstats.sh</a></p>
+<p>Source: <a href="https://git.xw3.org/xw3/cgi/src/branch/main/kernelstats/kernelstats.bash">https://git.xw3.org/xw3/cgi/src/branch/main/kernelstats/kernelstats.bash</a></p>
 
 <h2>API</h2>
 
