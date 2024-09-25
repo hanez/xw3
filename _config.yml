@@ -46,7 +46,7 @@ cookiebanner_dismiss_text: Got it!
 cookiebanner_link_text: Privacy Policy
 cookiebanner_link: /privacy/
 
-paginate: 3
+paginate: 2
 paginate_path: /blog/page/:num/
 permalink: /blog/:year/:month/:day/:title/
 
@@ -71,14 +71,15 @@ category_archive:
   path: /category/
 
 plugins:
+  - jekyll-paginate
+  - jekyll-sitemap
+  - jekyll-toc
+
 #  - jekyll-admin
 # https://stackoverflow.com/questions/10218779/custom-variables-in-jekyll-front-matter
 # https://github.com/gjtorikian/jekyll-conrefifier
 # https://stackoverflow.com/questions/65989040/bundle-exec-jekyll-serve-cannot-load-such-file
 #  - jekyll-conrefifier
-  - jekyll-paginate
-  - jekyll-sitemap
-  - jekyll-toc
 
 defaults:
   -
