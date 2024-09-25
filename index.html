@@ -32,6 +32,15 @@ noComments: true
 
 <h2>Latest Blog post</h2>
 
+{% for post in site.tags.pinned limit:1 %}
+<article class="post-content">
+<h3><a href="{{ post.url }}" title="{{ post.title }}">{{ post.url }}</a> <span style="cursor:help; float: right;" title="Pinned Post!">📌</span></h3>
+<p class="post-meta">{{ post.date | date: "%b %-d, %Y" }}
+{% if post.date_updated %} - Updated: {{ post.date_updated | date: "%b %-d, %Y" }}{% endif %} ({{ post.date | date: "%Z" }})</p>
+{{ post.content }}
+</article>
+{% endfor %}
+
 {% for post in site.posts limit:1 %}
 {% unless post.tags contains 'pinned' %}
 <article class="post-content">
