@@ -6,14 +6,14 @@ noDate: true
 noPermalink: true
 noComments: true
 title: /search/
-subtitle: Search this site using <a href="https://duckduckgo.com/" class="ext">DuckDuckGo</a>
+subtitle: Search this site using <a href="https://duckduckgo.com/" class="ext" target="_blank">DuckDuckGo</a>
 permalink: /search/
 tags:
 - search
 - duckduckgo
 ---
 
-<form method="get" id="searchform" action="https://duckduckgo.com/">
+<form method="get" id="searchform" action="https://duckduckgo.com/" target="_blank">
   <input type="hidden" name="sites" value="{{ site.url_short }}"/>
   <input type="input" name="q" placeholder="Keywords&hellip;" required/>
   <input type="submit" value="Search!" />
