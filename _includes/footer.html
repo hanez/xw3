@@ -1,18 +1,19 @@
 <footer class="site-footer">
   <div class="wrapper">
     <div class="footer-col-wrapper">
-      <p style="text-align:center;">{% if site.git %}Source: <a href="{{ site.git }}{{ site.branch }}{{ page.path }}">{{ site.git }}{{ site.branch }}{{ page.path }}</a>{% endif %}</p>
-      <p>Copyright &copy; {{ site.time | date: "%Y" }} -
+      <p style="text-align:center;">{% if site.git %}Source: <a href="{{ site.git }}{{ site.branch }}{{ page.path }}" target="_blank">{{ site.git }}{{ site.branch }}{{ page.path }}</a>{% endif %}</p>
+      <p style="text-align:center;">
         <a class="page-link" href="/" title="Home">Home</a> -
         <a class="page-link" href="/community/" title="Community">Community</a> -
         <a class="page-link" href="/contact/" title="Contact">Contact</a> -
         <a class="page-link" href="/privacy/" title="Privacy">Privacy</a> -
         <a class="page-link" href="/search/" title="Search">Search</a> -
         <a class="page-link" href="/feed.xml" title="RSS Feed">RSS</a> -
-        <a class="page-link" href="{{ site.git }}" title="Source">Source</a> -
-        <a class="page-link" href="{{ site.git }}issues" title="Issues">Issues</a> -
-        <a class="page-link" href="{{ site.git }}wiki" title="Wiki">Wiki</a>
+        <a class="page-link" href="{{ site.git }}" title="Source" target="_blank">Source</a> -
+        <a class="page-link" href="{{ site.git }}issues" title="Issues" target="_blank">Issues</a> -
+        <a class="page-link" href="{{ site.git }}wiki" title="Wiki" target="_blank">Wiki</a>
       </p>
+      <p style="text-align:center;">Copyright &copy; {{ site.time | date: "%Y" }} - Johannes Findeisen (<a href="https://git.xw3.org/hanez" target="_blank">hanez</a>)</p>
     </div>
   </div>
 </footer>

@@ -28,7 +28,7 @@ permalink: /blog/
 <article class="post-content">
 <h3><a href="{{ post.url }}" title="{{ post.title }}">{{ post.url }}</a> <span style="cursor:help; float: right;" title="Pinned Post!">📌</span></h3>
 <p class="post-meta">{{ post.date | date: "%b %-d, %Y" }}
-{% if post.date_updated %} - Updated: {{ post.date_updated | date: "%b %-d, %Y" }}{% endif %} ({{ post.date | date: "%Z" }}){% if post.author %}, <a href="{{ site.git_short }}/{{ post.author }}">{{ post.author }}</a>{% endif %}</p>
+{% if post.date_updated %} - Updated: {{ post.date_updated | date: "%b %-d, %Y" }}{% endif %} ({{ post.date | date: "%Z" }}){% if post.author %}, <a href="{{ site.git_short }}/{{ post.author }}" target="_blank">{{ post.author }}</a>{% endif %}</p>
 {{ post.content }}
 </article>
 {% endfor %}
@@ -38,7 +38,7 @@ permalink: /blog/
 <article class="post-content">
 <h3><a href="{{ post.url }}" title="{{ post.title }}">{{ post.url }}</a></h3>
 <p class="post-meta">{{ post.date | date: "%b %-d, %Y" }}
-{% if post.date_updated %} - Updated: {{ post.date_updated | date: "%b %-d, %Y" }}{% endif %} ({{ post.date | date: "%Z" }}){% if post.author %}, <a href="{{ site.git_short }}/{{ post.author }}">{{ post.author }}</a>{% endif %}</p>
+{% if post.date_updated %} - Updated: {{ post.date_updated | date: "%b %-d, %Y" }}{% endif %} ({{ post.date | date: "%Z" }}){% if post.author %}, <a href="{{ site.git_short }}/{{ post.author }}" target="_blank">{{ post.author }}</a>{% endif %}</p>
 {{ post.content }}
 </article>
 {% endunless %}

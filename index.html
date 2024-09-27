@@ -30,13 +30,13 @@ noComments: true
 
 <p style="text-align:right;"><a href="/about/">[More about]</a></p>
 
-<h2>Latest or important Blog posts</h2>
+<h2>Latest or important blog posts</h2>
 
 {% for post in site.tags.pinned limit:1 %}
 <article class="post-content">
 <h3><a href="{{ post.url }}" title="{{ post.title }}">{{ post.url }}</a> <span style="cursor:help; float: right;" title="Pinned Post!">📌</span></h3>
 <p class="post-meta">{{ post.date | date: "%b %-d, %Y" }}
-{% if post.date_updated %} - Updated: {{ post.date_updated | date: "%b %-d, %Y" }}{% endif %} ({{ post.date | date: "%Z" }}){% if post.author %}, <a href="{{ site.git_short }}/{{ post.author }}">{{ post.author }}</a>{% endif %}</p>
+{% if post.date_updated %} - Updated: {{ post.date_updated | date: "%b %-d, %Y" }}{% endif %} ({{ post.date | date: "%Z" }}){% if post.author %}, <a href="{{ site.git_short }}/{{ post.author }}" target="_blank">{{ post.author }}</a>{% endif %}</p>
 {{ post.content }}
 </article>
 {% endfor %}
@@ -46,13 +46,13 @@ noComments: true
 <article class="post-content">
 <h3><a href="{{ post.url }}" title="{{ post.title }}">{{ post.url }}</a></h3>
 <p class="post-meta">{{ post.date | date: "%b %-d, %Y" }}
-{% if post.date_updated %} - Updated: {{ post.date_updated | date: "%b %-d, %Y" }}{% endif %} ({{ post.date | date: "%Z" }}){% if post.author %}, <a href="{{ site.git_short }}/{{ post.author }}">{{ post.author }}</a>{% endif %}</p>
+{% if post.date_updated %} - Updated: {{ post.date_updated | date: "%b %-d, %Y" }}{% endif %} ({{ post.date | date: "%Z" }}){% if post.author %}, <a href="{{ site.git_short }}/{{ post.author }}" target="_blank">{{ post.author }}</a>{% endif %}</p>
 {{ post.content }}
 </article>
 {% endunless %}
 {% endfor %}
 
-<p style="text-align:right;"><a href="/blog/">[All Blog posts]</a></p>
+<p style="text-align:right;"><a href="/blog/">[All blog posts]</a></p>
 
 {% if page.noComments != true %}
 <h2>Comments</h2>
