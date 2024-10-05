@@ -2,17 +2,17 @@
   <div class="wrapper">
     <div class="footer-col-wrapper">
       <p style="text-align:center;">{% if site.git %}Source: <a href="{{ site.git }}{{ site.branch }}{{ page.path }}" target="_blank">{{ site.git }}{{ site.branch }}{{ page.path }}</a>{% endif %}</p>
-      <p style="text-align:center;">
-        <a class="page-link" href="/" title="Home">Home</a> -
-        <a class="page-link" href="/community/" title="Community">Community</a> -
-        <a class="page-link" href="/contact/" title="Contact">Contact</a> -
-        <a class="page-link" href="/privacy/" title="Privacy">Privacy</a> -
-        <a class="page-link" href="/search/" title="Search">Search</a> -
-        <a class="page-link" href="/feed.xml" title="RSS Feed">RSS</a> -
-        <a class="page-link" href="{{ site.git }}" title="Source (Git)" target="_blank">Source (Git)</a> -
-        <a class="page-link" href="{{ site.git }}issues" title="Issues" target="_blank">Issues</a> -
-        <a class="page-link" href="{{ site.git }}wiki" title="Wiki" target="_blank">Wiki</a>
-      </p>
+      <ul style="list-style:none;text-align:center;">
+        <li style="display:inline;"><a href="/" style="text-decoration:none;" title="Home">Home</a>&nbsp;-</li>
+        <li style="display:inline;">&nbsp;<a href="/community/" style="text-decoration:none;" title="Community">Community</a>&nbsp;-</li>
+        <li style="display:inline;">&nbsp;<a href="/contact/" style="text-decoration:none;" title="Contact">Contact</a>&nbsp;-</li>
+        <li style="display:inline;">&nbsp;<a href="/privacy/" style="text-decoration:none;" title="Privacy">Privacy</a>&nbsp;-</li>
+        <li style="display:inline;">&nbsp;<a href="/search/" style="text-decoration:none;" title="Search">Search</a>&nbsp;-</li>
+        <li style="display:inline;">&nbsp;<a href="/feed.xml" style="text-decoration:none;" title="RSS Feed">RSS</a>&nbsp;-</li>
+        <li style="display:inline;">&nbsp;<a href="{{ site.git }}" style="text-decoration:none;" title="Git" target="_blank">Git</a>&nbsp;-</li>
+        <li style="display:inline;">&nbsp;<a href="{{ site.git }}issues" style="text-decoration:none;" title="Issues" target="_blank">Issues</a>&nbsp;-</li>
+        <li style="display:inline;">&nbsp;<a href="{{ site.git }}wiki" style="text-decoration:none;" title="Wiki" target="_blank">Wiki</a></li>
+      </ul>
       <p style="text-align:center;">Copyright &copy; {{ site.time | date: "%Y" }} - Johannes Findeisen (<a href="https://git.xw3.org/hanez" target="_blank">hanez</a>)</p>
     </div>
   </div>
