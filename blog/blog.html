@@ -30,7 +30,7 @@ permalink: /blog/
 <p class="post-meta">{{ post.date | date: "%b %-d, %Y" }}
 {% if post.date_updated %} - Updated: {{ post.date_updated | date: "%b %-d, %Y" }}{% endif %} ({{ post.date | date: "%Z" }}){% if post.author %}, <a href="{{ site.git_short }}/{{ post.author }}" target="_blank">{{ post.author }}</a>{% endif %}</p>
 {{ post.content | truncatewords: site.truncatewords_length }}
-<p style="text-align:right;"><a href="{{ post.url }}" title="{{ post.url }}">[ Read post ]</a></p>
+<p style="text-align:right;"><a href="{{ post.url }}" title="{{ post.url }}">[Read post]</a></p>
 </article>
 {% endfor %}
 
@@ -41,7 +41,7 @@ permalink: /blog/
 <p class="post-meta">{{ post.date | date: "%b %-d, %Y" }}
 {% if post.date_updated %} - Updated: {{ post.date_updated | date: "%b %-d, %Y" }}{% endif %} ({{ post.date | date: "%Z" }}){% if post.author %}, <a href="{{ site.git_short }}/{{ post.author }}" target="_blank">{{ post.author }}</a>{% endif %}</p>
 {{ post.content | truncatewords: site.truncatewords_length }}
-<p style="text-align:right;"><a href="{{ post.url }}" title="{{ post.url }}">[ Read post ]</a></p>
+<p style="text-align:right;"><a href="{{ post.url }}" title="{{ post.url }}">[Read post]</a></p>
 </article>
 {% endunless %}
 {% endfor %}

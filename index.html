@@ -20,7 +20,7 @@ noComments: true
   </header>
 </div>
 
-<h2>About</h2>
+<h2><a href="/about/" title="About">About</a></h2>
 
 <div>
   <p>{{ site.description }}</p>
@@ -30,7 +30,7 @@ noComments: true
 
 <p style="text-align:right;"><a href="/about/">[More about]</a></p>
 
-<h2>Blog posts</h2>
+<h2><a href="/blog/" title="Blog posts">Blog posts</a></h2>
 
 {% for post in site.tags.pinned limit:1 %}
 <article class="post-content">
@@ -38,7 +38,10 @@ noComments: true
 <p class="post-meta">{{ post.date | date: "%b %-d, %Y" }}
 {% if post.date_updated %} - Updated: {{ post.date_updated | date: "%b %-d, %Y" }}{% endif %} ({{ post.date | date: "%Z" }}){% if post.author %}, <a href="{{ site.git_short }}/{{ post.author }}" target="_blank">{{ post.author }}</a>{% endif %}</p>
 {{ post.content }}
-<p style="text-align:right;"><a href="{{ post.url }}" title="{{ post.url }}">[ Read post ]</a></p>
+<ul style="list-style:none;margin-left:0px;text-align:right;">
+  <li style="display:inline;"><a href="/blog/" style="text-decoration:none;" title="/blog/">[All posts]</a></li>
+  <li style="display:inline;"><a href="{{ post.url }}" style="text-decoration:none;" title="{{ post.url }}">[Read post]</a></li>
+</ul>
 </article>
 {% endfor %}
 
@@ -49,12 +52,15 @@ noComments: true
 <p class="post-meta">{{ post.date | date: "%b %-d, %Y" }}
 {% if post.date_updated %} - Updated: {{ post.date_updated | date: "%b %-d, %Y" }}{% endif %} ({{ post.date | date: "%Z" }}){% if post.author %}, <a href="{{ site.git_short }}/{{ post.author }}" target="_blank">{{ post.author }}</a>{% endif %}</p>
 {{ post.content }}
-<p style="text-align:right;"><a href="{{ post.url }}" title="{{ post.url }}">[ Read post ]</a></p>
+<ul style="list-style:none;margin-left:0px;text-align:right;">
+  <li style="display:inline;"><a href="/blog/" style="text-decoration:none;" title="/blog/">[All posts]</a></li>
+  <li style="display:inline;"><a href="{{ post.url }}" style="text-decoration:none;" title="{{ post.url }}">[Read post]</a></li>
+</ul>
 </article>
 {% endunless %}
 {% endfor %}
 
-<p style="text-align:right;"><a href="/blog/">[All blog posts]</a></p>
+<!--<p style="text-align:right;"><a href="/blog/">[All blog posts]</a></p>-->
 
 {% if page.noComments != true %}
 <h2>Comments</h2>
