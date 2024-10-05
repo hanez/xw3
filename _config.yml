@@ -28,7 +28,7 @@ os: GNU/Linux
 charset: utf-8
 libdir: /var/www/xw3.org/www/lib
 
-truncatewords_length: 64
+truncatewords_length: 512
 
 # Set to your git root and branch to show a link to the file source in the footer. Unset to disable.
 git: https://git.xw3.org/xw3/xw3/

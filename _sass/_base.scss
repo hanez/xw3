@@ -159,7 +159,7 @@ pre > code {
   padding: 0 0 0 0;
 }
 
-pre > code:before{
+/**pre > code:before{
   content: counter(line);
   display: inline-block;
   width: 2.0em;
@@ -169,7 +169,7 @@ pre > code:before{
   color: #bc6c21;
   -webkit-user-select: none;
   text-align: right;
-}
+}**/
 
 audio {
   height: 24px;
