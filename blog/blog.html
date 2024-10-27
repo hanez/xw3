@@ -26,8 +26,8 @@ permalink: /blog/
 {% for post in site.tags.pinned %}
 <article class="post-content">
 <h3><a href="{{ post.url }}" title="{{ post.title }}">{{ post.url }}</a> <span style="cursor:help; float: right;" title="Pinned Post!">📌</span></h3>
-<p class="post-meta">{{ post.date | date: "%b %-d, %Y" }}
-{% if post.date_updated %} - Edited: {{ post.date_updated | date: "%b %-d, %Y" }}{% endif %} ({{ post.date | date: "%Z" }}){% if post.author %}, <a href="{{ site.git_short }}/{{ post.author }}" target="_blank">{{ post.author }}</a>{% endif %}</p>
+<p class="post-meta">{{ post.date | date: "%b %-d, %Y %H:%M:%S" }}
+{% if post.date_updated %} - Edited: {{ post.date_updated | date: "%b %-d, %Y %H:%M:%S" }}{% endif %} ({{ post.date | date: "%Z" }}){% if post.author %}, <a href="{{ site.git_short }}/{{ post.author }}" target="_blank">{{ post.author }}</a>{% endif %}</p>
 {{ post.content | truncatewords: site.truncatewords_length }}
 <p style="text-align:right;"><a href="{{ post.url }}" title="{{ post.url }}">[Read post]</a></p>
 </article>
@@ -37,8 +37,8 @@ permalink: /blog/
 {% unless post.tags contains 'pinned' %}
 <article class="post-content">
 <h3><a href="{{ post.url }}" title="{{ post.title }}">{{ post.url }}</a></h3>
-<p class="post-meta">{{ post.date | date: "%b %-d, %Y" }}
-{% if post.date_updated %} - Edited: {{ post.date_updated | date: "%b %-d, %Y" }}{% endif %} ({{ post.date | date: "%Z" }}){% if post.author %}, <a href="{{ site.git_short }}/{{ post.author }}" target="_blank">{{ post.author }}</a>{% endif %}</p>
+<p class="post-meta">{{ post.date | date: "%b %-d, %Y %H:%M:%S" }}
+{% if post.date_updated %} - Edited: {{ post.date_updated | date: "%b %-d, %Y %H:%M:%S" }}{% endif %} ({{ post.date | date: "%Z" }}){% if post.author %}, <a href="{{ site.git_short }}/{{ post.author }}" target="_blank">{{ post.author }}</a>{% endif %}</p>
 {{ post.content | truncatewords: site.truncatewords_length }}
 <p style="text-align:right;"><a href="{{ post.url }}" title="{{ post.url }}">[Read post]</a></p>
 </article>
