@@ -5,8 +5,8 @@ layout: default
 <div class="post">
   <header class="post-header">
     <h1 class="post-title" id="terminal">{{ site.title }}:{{ page.title }}<a href="../">../</a></h1>
-    {% if page.noDate != true %}<p class="post-meta" style="padding: 0px 0px 0px 0px;">{% if page.date %}{{ page.date | date: "%b %-d, %Y %H:%M:%S" }} - {% endif %}
-    Edited: {{ page.path | file_date | date: "%b %-d, %Y %H:%M:%S" }} ({{ page.path | file_date | date: "%Z" }}){% if page.author %}, <a href="{{ site.git_short }}/{{ page.author }}" target="_blank">{{ page.author }}</a>{% endif %}</p>{% endif %}
+    {% if page.noDate != true %}<p class="post-meta" style="padding: 0px 0px 0px 0px;">{% if page.date %}{{ page.date | date: "%b %-d, %Y %H:%M:%S" }} ({{ page.date | date: "%b %-d, %Y %H:%M:%S" | date: "%Z" }}) - {% endif %}
+    Edited: {{ page.path | file_date | date: "%b %-d, %Y %H:%M:%S" }} ({{ page.path | file_date | date: "%Z" }}){% if page.author %}, <a href="{{ site.git_short }}/{{ page.author }}" target="_blank" class="ext">{{ page.author }}</a>{% endif %}</p>{% endif %}
     {% if page.subtitle %}<p style="padding: 0px 0px 0px 0px;">{{ page.subtitle }}</p>{% endif %}
   </header>
   <article class="post-content">

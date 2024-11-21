@@ -5,6 +5,8 @@ noToc: false
 title: /documentation/
 subtitle: The xw3 documentation
 permalink: /documentation/
+_date: 20.04.2024
+author: hanez
 ---
 
 ## Getting started
