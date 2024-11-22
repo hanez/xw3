@@ -68,6 +68,9 @@ exclude:
   - Makefile
   - README.md
   - requirements.txt
+  - package.json
+  - package-lock.json
+  - xw3.code-workspace
 
 category_archive:
   path: /category/
