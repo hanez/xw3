@@ -1,11 +1,16 @@
 @font-face {
-  font-family: 'ForkAwesome';
-  src: url('../fonts/forkawesome-webfont.woff') format('woff');
-}
-
-@font-face {
   font-family: 'CourierPrimeSans';
   src: url('../fonts/Courier-Prime-Sans.ttf');
+}
+
+/*@font-face {
+  font-family: 'MDI';
+  src: url('../fonts/materialdesignicons-webfont.woff') format('woff');
+}*/
+
+@font-face {
+  font-family: 'MDI';
+  src: url('../fonts/materialdesignicons-webfont.woff2') format('woff2');
 }
 
 html {
@@ -106,11 +111,6 @@ a:active {
   text-decoration: none;
 }
 
-a.ext:after {
-  content: "&#128279";
-  font-size: 14px;
-}
-
 p {
   padding: 0px 0px 14px 0px;
 }
@@ -205,9 +205,5 @@ table > tbody > tr > td {
 
 table.sortable th:not(.sorttable_sorted):not(.sorttable_sorted_reverse):not(.sorttable_nosort):after {
   content: " \25B4 \25BE"
-}
-
-.isso-input-wrapper input {
-  margin-top: 3px;
 }
 

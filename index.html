@@ -36,7 +36,7 @@ noComments: true
 <article class="post-content">
 <h3><a href="{{ post.url }}" title="{{ post.title }}">{{ post.url }}</a> <span style="cursor:help; float: right;" title="Pinned Post!">📌</span></h3>
 <p class="post-meta">{{ post.date | date: "%b %-d, %Y %H:%M:%S" }}
-{% if post.date_updated %} - Edited: {{ post.date_updated | date: "%b %-d, %Y %H:%M:%S" }}{% endif %} ({{ post.date | date: "%Z" }}){% if post.author %}, <a href="{{ site.git_short }}/{{ post.author }}" target="_blank">{{ post.author }}</a>{% endif %}</p>
+{% if post.date_updated %} - Edited: {{ post.date_updated | date: "%b %-d, %Y %H:%M:%S" }}{% endif %} ({{ post.date | date: "%Z" }}){% if post.author %}, <a href="{{ site.git_short }}/{{ post.author }}" target="_blank" class="user">{{ post.author }}</a>{% endif %}</p>
 {{ post.content }}
 <ul style="list-style:none;margin-left:0px;text-align:right;">
   <li style="display:inline;"><a href="/blog/" style="text-decoration:none;" title="/blog/">[All posts]</a></li>
@@ -50,7 +50,7 @@ noComments: true
 <article class="post-content">
 <h3><a href="{{ post.url }}" title="{{ post.title }}">{{ post.url }}</a></h3>
 <p class="post-meta">{{ post.date | date: "%b %-d, %Y %H:%M:%S" }}
-{% if post.date_updated %} - Edited: {{ post.date_updated | date: "%b %-d, %Y %H:%M:%S" }}{% endif %} ({{ post.date | date: "%Z" }}){% if post.author %}, <a href="{{ site.git_short }}/{{ post.author }}" target="_blank">{{ post.author }}</a>{% endif %}</p>
+{% if post.date_updated %} - Edited: {{ post.date_updated | date: "%b %-d, %Y %H:%M:%S" }}{% endif %} ({{ post.date | date: "%Z" }}){% if post.author %}, <a href="{{ site.git_short }}/{{ post.author }}" target="_blank" class="user">{{ post.author }}</a>{% endif %}</p>
 {{ post.content }}
 <ul style="list-style:none;margin-left:0px;text-align:right;">
   <li style="display:inline;"><a href="/blog/" style="text-decoration:none;" title="/blog/">[All posts]</a></li>

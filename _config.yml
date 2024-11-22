@@ -2,7 +2,7 @@ document_root: /var/www/xw3.org/www/_site/
 data_dir: /var/www/xw3.org/www/_data/
 title: xw3.org
 subtitle: Extending the World Wide Web
-description: xw3 is a framework for building static web based applications using a <a href="https://en.wikipedia.org/wiki/Common_Gateway_Interface" class="ext" target="_blank">CGI</a> (Server) and JavaScript (Browser/Client) to implement dynamic features. The static website generator we use is <a href="https://jekyllrb.com/" class="ext" target="_blank">Jekyll</a>. The JavaScript library we are using is <a href="https://jquery.com/" class="ext" target="_blank">jQuery</a>. Take a look at the <a href="/examples/">examples</a>! Additionally there is a <a href="https://git.xw3.org/xw3/xw3/src/branch/main/Makefile" target="_blank">Makefile</a> included for easy deployment of the application/website.
+description: xw3 is a framework for building static web based applications using a <a href="https://en.wikipedia.org/wiki/Common_Gateway_Interface" class="ext" target="_blank">CGI</a> (Server) and JavaScript (Browser/Client) to implement dynamic features. The static website generator we use is <a href="https://jekyllrb.com/" class="ext" target="_blank">Jekyll</a>. The JavaScript library we are using is <a href="https://jquery.com/" class="ext" target="_blank">jQuery</a>. Take a look at the <a href="/examples/">examples</a>! Additionally there is a <a href="https://git.xw3.org/xw3/xw3/src/branch/main/Makefile" target="_blank" class="code">Makefile</a> included for easy deployment of the application/website.
 keywords:
   - xw3
   - static

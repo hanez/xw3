@@ -4,4 +4,4 @@
 _site/
 Gemfile.lock
 gitlog*.html
-
+node_modules/
