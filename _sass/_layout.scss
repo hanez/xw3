@@ -257,6 +257,14 @@ a.code::after {
   text-decoration: none;
 }
 
+a.community::after {
+  content: "\F112D";
+  font-family: "MDI";
+  padding-left: 5px;
+  color: $brand-color;
+  text-decoration: none;
+}F112D
+
 a.cube::after {
   content: "\F01A7";
   font-family: "MDI";
