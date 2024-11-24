@@ -2,6 +2,7 @@
 layout: page
 published: true
 noToc: false
+_noDate: true
 title: /documentation/
 subtitle: The xw3 documentation
 permalink: /documentation/

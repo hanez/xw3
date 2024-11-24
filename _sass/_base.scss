@@ -1,16 +1,16 @@
 @font-face {
-  font-family: 'CourierPrimeSans';
-  src: url('../fonts/Courier-Prime-Sans.ttf');
+  font-family: "CourierPrimeSans";
+  src: url("../fonts/Courier-Prime-Sans.ttf");
 }
 
 /*@font-face {
-  font-family: 'MDI';
-  src: url('../fonts/materialdesignicons-webfont.woff') format('woff');
+  font-family: "MDI";
+  src: url("../fonts/materialdesignicons-webfont.woff") format("woff");
 }*/
 
 @font-face {
-  font-family: 'MDI';
-  src: url('../fonts/materialdesignicons-webfont.woff2') format('woff2');
+  font-family: "MDI";
+  src: url("../fonts/materialdesignicons-webfont.woff2") format("woff2");
 }
 
 html {
@@ -25,7 +25,9 @@ pre, hr, dl, dd, ol, ul, figure, span {
 body {
   background-color: $background-color;
   //background-image: url("/images/camouflage.jpg");
-  background-size: cover;
+  //background-repeat: no-repeat;
+  //background-attachment: fixed;
+  //background-size: 100%;
   color: $text-color;
   font-family: $base-font-family;
   font-size: $base-font-size;
@@ -177,16 +179,16 @@ audio {
 }
 
 table {
-  border: 1px solid black;
-  border-collapse: collapse;
+  border: 0px solid black;
+  //border-collapse: collapse;
 }
 
 table > thead > tr {
 }
 
 table > thead > tr > th {
-  background: #293e58;
-  border: 1px solid black;
+  background: $tablehead-color;
+  border: 0px solid black;
   color: white;
   padding: 4px;
 }
@@ -200,6 +202,7 @@ table > tbody > tr:nth-child(odd) {
 }
 
 table > tbody > tr > td {
+  border: 0px solid black;
   padding: 4px;
 }
 
