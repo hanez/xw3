@@ -2,9 +2,9 @@ all:
 	make release
 
 build:
-	git log -n24 --date='format:%F %H:%M' --pretty='format:<li>%ad - <a href="https://git.xw3.org/xw3/xw3/commit/%H" target="_blank">%s</a></li>' > gitlog.html
-	cd cgi && git log -n24 --date='format:%F %H:%M' --pretty='format:<li>%ad - <a href="https://git.xw3.org/xw3/cgi/commit/%H" target="_blank">%s</a></li>' > ../gitlog_cgi.html && cd ..
-	cd lib && git log -n24 --date='format:%F %H:%M' --pretty='format:<li>%ad - <a href="https://git.xw3.org/xw3/lib/commit/%H" target="_blank">%s</a></li>' > ../gitlog_lib.html && cd ..
+	git log -n24 --date='format:%F %H:%M' --pretty='format:<tr><td>%ad</td><td><a href="https://git.xw3.org/xw3/xw3/commit/%H" class="commit" target="_blank">%s</a></td></tr>' > gitlog.html
+	cd cgi && git log -n24 --date='format:%F %H:%M' --pretty='format:<tr><td>%ad</td><td><a href="https://git.xw3.org/xw3/cgi/commit/%H" class="commit" target="_blank">%s</a></td></tr>' > ../gitlog_cgi.html && cd ..
+	cd lib && git log -n24 --date='format:%F %H:%M' --pretty='format:<tr><td>%ad</td><td><a href="https://git.xw3.org/xw3/lib/commit/%H" class="commit" target="_blank">%s</a></td></tr>' > ../gitlog_lib.html && cd ..
 	bundle exec jekyll b --incremental
 
 clean:
