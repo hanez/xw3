@@ -3,17 +3,14 @@
   src: url("../fonts/Courier-Prime-Sans.ttf");
 }
 
-/*@font-face {
-  font-family: "MDI";
-  src: url("../fonts/materialdesignicons-webfont.woff") format("woff");
-}*/
-
 @font-face {
   font-family: "MDI";
   src: url("../fonts/materialdesignicons-webfont.woff2") format("woff2");
 }
 
 html {
+  margin: 0;
+  padding: 0;
 }
 
 body, h1, h2, h3, h4, h5, h6, p, code, blockquote,
@@ -90,6 +87,8 @@ li {
 
 a {
   color: $brand-color;
+  //display: inline-block;
+  //position: relative;
 }
 
 a:link {
@@ -113,6 +112,116 @@ a:active {
   text-decoration: none;
 }
 
+// https://stackoverflow.com/questions/2011142/how-to-change-the-style-of-the-title-attribute-inside-an-anchor-tag
+// https://css-tricks.com/css-content/
+/*a[title]:hover::after {
+  background: rgba(0,0,0,1.0);
+  //content: attr(title);
+  //position: absolute;
+  //top: -100%;
+  //left: 0;
+  border-radius: 0px;
+  //border: 1px solid red;
+  //color: #fff;
+  //background: $brand-color;
+}*/
+
+a.bug::after {
+  content: "\F0A30";
+  font-family: "MDI";
+  padding-left: 5px;
+}
+
+a.chat::after {
+  content: "\F0EDE";
+  font-family: "MDI";
+  padding-left: 5px;
+}
+
+a.code::after {
+  content: "\F102B";
+  font-family: "MDI";
+  padding-left: 5px;
+}
+
+a.community::after {
+  content: "\F112D";
+  font-family: "MDI";
+  padding-left: 5px;
+}
+
+a.cube::after {
+  content: "\F01A7";
+  font-family: "MDI";
+  padding-left: 5px;
+}
+
+a.document {
+  content: "\F09EE";
+  font-family: "MDI";
+  padding-left: 5px;
+}
+
+a.ext::after {
+  content: "\F03CC";
+  font-family: "MDI";
+  padding-left: 5px;
+}
+
+a.file::after {
+  content: "\F0224";
+  font-family: "MDI";
+  padding-left: 5px;
+}
+
+a.git::after {
+  content: "\F02A2";
+  font-family: "MDI";
+  padding-left: 5px;
+}
+
+a.home::after {
+  content: "\F06A1";
+  font-family: "MDI";
+  padding-left: 5px;
+}
+
+a.mail::after {
+  content: "\F01F0";
+  font-family: "MDI";
+  padding-left: 5px;
+}
+
+a.privacy::after {
+  content: "\F0CC8";
+  font-family: "MDI";
+  padding-left: 5px;
+}
+
+a.rss::after {
+  content: "\F046B";
+  font-family: "MDI";
+  padding-left: 5px;
+}
+
+a.search::after {
+  content: "\F0349";
+  font-family: "MDI";
+  padding-left: 5px;
+}
+
+a.user::after {
+  content: "\F0013";
+  font-family: "MDI";
+  padding-left: 5px;
+}
+
+a.wiki::after {
+  content: "\F1CCC";
+  font-family: "MDI";
+  padding-left: 5px;
+}
+
 p {
   padding: 0px 0px 14px 0px;
 }
@@ -130,8 +239,6 @@ blockquote {
 }
 
 pre {
-  -moz-tab-size: 2;
-  border: 0px $grey-color solid;
   background: $grey-color-dark;
   background-image: -webkit-linear-gradient($grey-color-dark 50%, $grey-color-light 50%);
   background-image: -moz-linear-gradient($grey-color-dark 50%, $grey-color-light 50%);
@@ -141,6 +248,7 @@ pre {
   background-position: 0 0;
   background-repeat: repeat;
   background-size: 2.8em 2.8em;
+  border: 0px $grey-color solid;
   counter-reset: line;
   font-family: "CourierPrimeSans";
   font-size: $base-font-size;
@@ -149,8 +257,9 @@ pre {
   margin: 0 0 0 0;
   overflow: auto;
   overflow-x: auto;
-  padding: 0 0 0 0.5em;
+  padding: 0 0 0 0;
   tab-size: 2;
+  -moz-tab-size: 2;
 }
 
 pre > code {

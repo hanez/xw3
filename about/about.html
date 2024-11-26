@@ -31,15 +31,16 @@ tags:
 <ul>
   <li>Maintainable</li>
   <li>Minimal</li>
-  <li>MIT licensed
+  <li><a href="https://opensource.org/license/MIT" class="ext" target="_blank">MIT</a> licensed
   <ul>
-    <li>All included libs are <a href="https://opensource.org/license/MIT" class="ext" target="_blank">MIT</a> licensed too</li>
+    <li>All included libraries are MIT or similarly licensed (<a href="https://www.apache.org/licenses/" class="ext" target="_blank">Apache</a>, <a href="https://en.wikipedia.org/wiki/BSD_licenses" class="ext" target="_blank">BSD</a>, <a href="https://spdx.org/licenses/X11.html" class="ext" target="_blank">X11</a>, etc.)</li>
     <li>The font is <a href="https://openfontlicense.org/" class="ext" target="_blank">OFL</a> licensed</li>
     <li>The icons are <a href="https://www.apache.org/licenses/LICENSE-2.0"  class="ext" target="_blank">Apache 2.0</a> licensed</li>
   </ul>
   <li>No MVC framework bloat</li>
   <li>No oversized template parsing</li>
   <li>Scalable</li>
+  <li>Write content in <a href="https://daringfireball.net/projects/markdown/" class="ext" target="_blank">Markdown</a>/<a href="https://kramdown.gettalong.org/" class="ext" target="_blank">kramdown</a> or <a href="https://html.spec.whatwg.org/" class="ext" target="_blank">HTML</a></li>
 </ul>
 
 <h3>Cons</h3>
@@ -50,36 +51,128 @@ tags:
 
 <h2>Software used in this project</h2>
 
-<p>Not all of the listed software is required. This is, what we use!</p>
+<p>Not all of the listed software is required.</p>
 
-<ul>
-  <li><a href="https://alpinelinux.org/" class="ext" target="_blank">Alpine Linux</a> - A rolling-release, security-oriented, lightweight Linux distribution. Systemd-free! (This server)</li>
-  <li><a href="https://artixlinux.org/" class="ext" target="_blank">Artix Linux</a> - A rolling-release Linux distribution, based on Arch Linux. Systemd-free! (My desktop)</li>
-  <li><a href="https://www.gnu.org/software/bash/" class="ext" target="_blank">Bash</a> - The <a href="https://www.gnu.org/" class="ext" target="_blank">GNU Project</a>'s shell</li>
-  <li><a href="https://quoteunquoteapps.com/courierprime/" class="ext" target="_blank">Courier Prime</a> - It's Courier, just better. The font used overall in this project</li>
-  <li><a href="https://www.docker.com/" class="ext" target="_blank">Docker</a> - Allows you to pack, ship and run any application as a lightweight container</li>
-  <li><a href="https://forgejo.org/" class="ext" target="_blank">Forgejo</a> - A free and open source self-hosted lightweight software forge like GitHub</li>
-  <li><a href="https://gcc.gnu.org/" class="ext" target="_blank">GCC</a> - The GNU Compiler Collection</li>
-  <li><a href="https://www.gentoo.org/" class="ext" target="_blank">Gentoo Linux</a> - A rolling-release Linux distribution built using the Portage package management system. Systemd-free!</li>
-  <li><a href="https://git-scm.com/" class="ext" target="_blank">Git</a> - A free and open source distributed version control system</li>
-  <li><a href="https://isso-comments.de/" class="ext" target="_blank">Isso</a> - A commenting server similar to Disqus</li>
-  <li><a href="https://jekyllrb.com/" class="ext" target="_blank">Jekyll</a> - A simple, blog-aware, static site generator</li>
-  <li><a href="https://github.com/js-cookie/js-cookie" class="ext" target="_blank">js-cookie</a> - A simple, lightweight JavaScript API for handling browser cookies</li>
-  <li><a href="https://jquery.com/" class="ext" target="_blank">jQuery</a> - A fast, small, and feature-rich JavaScript library</li>
-  <li><a href="https://leafletjs.com/" class="ext" target="_blank">Leaflet</a> - An open-source JavaScript library for mobile-friendly interactive maps</li>
-  <li><a href="https://www.lighttpd.net/" class="ext" target="_blank">lighttpd</a> - A secure, fast, compliant, and very flexible web server</li>
-  <li><a href="https://kernel.org/" class="ext" target="_blank">Linux</a> - A family of open-source Unix-like operating systems based on the Linux kernel</li>
-  <li><a href="https://www.lua.org/" class="ext" target="_blank">Lua</a> - A powerful, efficient, lightweight, embeddable scripting language</li>
-  <li><a href="https://www.gnu.org/software/make/" class="ext" target="_blank">Make</a> - A tool which controls the generation of executables and a lot more for automation</li>
-  <li><a href="https://pictogrammers.com/library/mdi/" class="ext" target="_blank">Material Design Icons</a> - Open-source iconography for designers and developers</li>
-  <li><a href="https://github.com/tdewolff/minify" class="ext" target="_blank">Minify</a> - A minifier package which provides HTML5, CSS3, JS, JSON, SVG and XML minifiers</li>
-  <li><a href="https://www.perl.org/" class="ext" target="_blank">Perl</a> - A highly capable, feature-rich programming language with over 36 years of development</li>
-  <li><a href="https://www.php.net/" class="ext" target="_blank">PHP</a> - A popular general-purpose scripting language for web development</li>
-  <li><a href="https://www.python.org/" class="ext" target="_blank">Python</a> - A programming language that lets you work quickly</li>
-  <li><a href="https://rsync.samba.org/" class="ext" target="_blank">rsync</a> - An open source utility that provides fast incremental file transfer</li>
-  <li><a href="https://www.ruby-lang.org/en/" class="ext" target="_blank">Ruby</a> - A dynamic, open source programming language with a focus on simplicity and productivity</li>
-  <li><a href="https://xtermjs.org/" class="ext" target="_blank">xterm.js</a> - Build terminals in the browser</li>
-</ul>
+<p>We use software from the following projects:</p>
+
+<table width="100%" border="1" style="table-layout: fixed;" class="sortable">
+  <thead>
+  <tr>
+    <th style="text-align: left; width: 146px;">Project</th>
+    <th style="text-align: left;">Description</th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr>
+    <td><a href="https://alpinelinux.org/" class="ext" target="_blank">Alpine Linux</a></td>
+    <td>A rolling-release, security-oriented, lightweight Linux distribution. Systemd-free! (This server)</td>
+  </tr>
+  <tr>
+    <td><a href="https://artixlinux.org/" class="ext" target="_blank">Artix Linux</a></td>
+    <td>A rolling-release Linux distribution, based on Arch Linux. Systemd-free! (My desktop)</td>
+  </tr>
+  <tr>
+    <td><a href="https://www.gnu.org/software/bash/" class="ext" target="_blank">Bash</a></td>
+    <td>The <a href="https://www.gnu.org/" class="ext" target="_blank">GNU Project</a>'s shell</td>
+  </tr>
+  <tr>
+    <td><a href="https://quoteunquoteapps.com/courierprime/" class="ext" target="_blank">Courier Prime</a></td>
+    <td>It's Courier, just better. The font used overall in this project</td>
+  </tr>
+  <tr>
+    <td><a href="https://www.docker.com/" class="ext" target="_blank">Docker</a></td>
+    <td>Allows you to pack, ship and run any application as a lightweight container</td>
+  </tr>
+  <tr>
+    <td><a href="https://forgejo.org/" class="ext" target="_blank">Forgejo</a></td>
+    <td>A free and open source self-hosted lightweight software forge like GitHub</td>
+  </tr>
+  <tr>
+    <td><a href="https://gcc.gnu.org/" class="ext" target="_blank">GCC</a></td>
+    <td>The GNU Compiler Collection</td>
+  </tr>
+  <tr>
+    <td><a href="https://www.gentoo.org/" class="ext" target="_blank">Gentoo Linux</a></td>
+    <td>A rolling-release Linux distribution built using the Portage package management system. Systemd-free!</td>
+  </tr>
+  <tr>
+    <td><a href="https://git-scm.com/" class="ext" target="_blank">Git</a></td>
+    <td>A free and open source distributed version control system</td>
+  </tr>
+  <tr>
+    <td><a href="https://isso-comments.de/" class="ext" target="_blank">Isso</a></td>
+    <td>A commenting server similar to Disqus</td>
+  </tr>
+  <tr>
+    <td><a href="https://jekyllrb.com/" class="ext" target="_blank">Jekyll</a></td>
+    <td>A simple, blog-aware, static site generator</td>
+  </tr>
+  <tr>
+    <td><a href="https://github.com/js-cookie/js-cookie" class="ext" target="_blank">js-cookie</a></td>
+    <td>A simple, lightweight JavaScript API for handling browser cookies</td>
+  </tr>
+  <tr>
+    <td><a href="https://jquery.com/" class="ext" target="_blank">jQuery</a></td>
+    <td>A fast, small, and feature-rich JavaScript library</td>
+  </tr>
+  <tr>
+    <td><a href="https://leafletjs.com/" class="ext" target="_blank">Leaflet</a></td>
+    <td>An open-source JavaScript library for mobile-friendly interactive maps</td>
+  </tr>
+  <tr>
+    <td><a href="https://www.lighttpd.net/" class="ext" target="_blank">lighttpd</a></td>
+    <td>A secure, fast, compliant, and very flexible web server</td>
+  </tr>
+  <tr>
+    <td><a href="https://kernel.org/" class="ext" target="_blank">Linux</a></td>
+    <td>A family of open-source Unix-like operating systems based on the Linux kernel</td>
+  </tr>
+  <tr>
+    <td><a href="https://www.lua.org/" class="ext" target="_blank">Lua</a></td>
+    <td>A powerful, efficient, lightweight, embeddable scripting language</td>
+  </tr>
+  <tr>
+    <td><a href="https://www.gnu.org/software/make/" class="ext" target="_blank">Make</a></td>
+    <td>A tool which controls the generation of executables and a lot more for automation</td>
+  </tr>
+  <tr>
+    <td><a href="https://pictogrammers.com/library/mdi/" class="ext" target="_blank">Material Design Icons</a></td>
+    <td>Open-source iconography for designers and developers</td>
+  </tr>
+  <tr>
+    <td><a href="https://github.com/tdewolff/minify" class="ext" target="_blank">Minify</a></td>
+    <td>A minifier package which provides HTML5, CSS3, JS, JSON, SVG and XML minifiers</td>
+  </tr>
+  <tr>
+    <td><a href="https://www.perl.org/" class="ext" target="_blank">Perl</a></td>
+    <td>A highly capable, feature-rich programming language with over 36 years of development</td>
+  </tr>
+  <tr>
+    <td><a href="https://www.php.net/" class="ext" target="_blank">PHP</a></td>
+    <td>A popular general-purpose scripting language for web development</td>
+  </tr>
+  <tr>
+    <td><a href="https://www.python.org/" class="ext" target="_blank">Python</a></td>
+    <td>A programming language that lets you work quickly</td>
+  </tr>
+  <tr>
+    <td><a href="https://rsync.samba.org/" class="ext" target="_blank">rsync</a></td>
+    <td>An open source utility that provides fast incremental file transfer</td>
+  </tr>
+  <tr>
+    <td><a href="https://www.ruby-lang.org/en/" class="ext" target="_blank">Ruby</a></td>
+    <td>A dynamic, open source programming language with a focus on simplicity and productivity</td>
+  </tr>
+  <tr>
+    <td><a href="https://www.kryogenix.org/code/browser/sorttable/" class="ext" target="_blank">sortable</a></td>
+    <td>sorttable: Make all your tables sortable</td>
+  </tr>
+  <tr>
+    <td><a href="https://xtermjs.org/" class="ext" target="_blank">xterm.js</a></td>
+    <td>Build terminals in the browser</td>
+  </tr>
+  </tbody>
+</table>
 
 <h2>Developers</h2>
 
