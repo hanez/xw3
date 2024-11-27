@@ -2,31 +2,32 @@
 # Only the main Sass file needs front matter (the dashes are enough)
 ---
 @charset "utf-8";
-$base-font-family:  "CourierPrimeSans";
-$base-font-size:    16px;
-$small-font-size:   $base-font-size * 0.875;
-$base-icon-size:    12px;
-$base-icon-color:   #565656;
-$base-line-height:  1.6;
-$spacing-unit:      18px;
-$text-color:        #000;
-$background-color:  #565656;
-$headline-color:    #bc6c21; //#b40000;
-$hover-color:       #bc6c21;
-$topbutton-color:   $headline-color;
-$brand-color:       $background-color;
-$brand-color-light: lighten($brand-color, 40%);
-$grey-color:        #828282;
-$grey-color-light:  #e8e8e8;
-$grey-color-dark:   #dbdbdb;
-$green-color:       #3ab215;
-$tablehead-color:   #bc6c21;
-$content-width:     1024px;
-$on-palm:           761px;
-$on-laptop:         1024px;
+$base-font-family:      "CPS";
+$base-font-size:        16px;
+$small-font-size:       $base-font-size * 0.875;
+$base-icon-font-family: "MDI";
+$base-icon-size:        12px;
+$base-icon-color:       #565656;
+$base-line-height:      1.6;
+$spacing-unit:          18px;
+$text-color:            #000;
+$background-color:      #565656;
+$headline-color:        #bc6c21; //#b40000;
+$hover-color:           #bc6c21;
+$topbutton-color:       $headline-color;
+$brand-color:           $background-color;
+$brand-color-light:     lighten($brand-color, 40%);
+$grey-color:            #828282;
+$grey-color-light:      #e8e8e8;
+$grey-color-dark:       #dbdbdb;
+$green-color:           #3ab215;
+$tablehead-color:       #bc6c21;
+$content-width:         1024px;
+$on-palm:               761px;
+$on-laptop:             1024px;
 @mixin media-query($device) {
     @media screen and (max-width: $device) {
         @content;
     }
 }
-@import "base", "layout", "toc";
+@import "base", "fonts", "forms", "highlight", "isso", "layout", "links", "toc";

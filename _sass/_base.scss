@@ -1,13 +1,3 @@
-@font-face {
-  font-family: "CourierPrimeSans";
-  src: url("../fonts/Courier-Prime-Sans.ttf");
-}
-
-@font-face {
-  font-family: "MDI";
-  src: url("../fonts/materialdesignicons-webfont.woff2") format("woff2");
-}
-
 html {
   margin: 0;
   padding: 0;
@@ -21,10 +11,10 @@ pre, hr, dl, dd, ol, ul, figure, span {
 
 body {
   background-color: $background-color;
-  //background-image: url("/images/camouflage.jpg");
-  //background-repeat: no-repeat;
-  //background-attachment: fixed;
-  //background-size: 100%;
+  background-image: url("/images/fractalized.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100%;
   color: $text-color;
   font-family: $base-font-family;
   font-size: $base-font-size;
@@ -85,263 +75,6 @@ li {
   }
 }
 
-a {
-  color: $brand-color;
-  //display: inline-block;
-  //position: relative;
-}
-
-a:link {
-  text-decoration: underline;
-}
-
-a:visited {
-  color: $brand-color;
-  text-decoration: underline;
-}
-
-a:focus,
-a:hover {
-  color: $hover-color;
-  text-decoration: none;
-  text-shadow: $hover-color 0px 0px 6px;
-}
-
-a:active {
-  color: $hover-color;
-  text-decoration: none;
-}
-
-// https://stackoverflow.com/questions/2011142/how-to-change-the-style-of-the-title-attribute-inside-an-anchor-tag
-// https://css-tricks.com/css-content/
-/*a[title]:hover::after {
-  background: rgba(0,0,0,1.0);
-  //content: attr(title);
-  //position: absolute;
-  //top: -100%;
-  //left: 0;
-  border-radius: 0px;
-  //border: 1px solid red;
-  //color: #fff;
-  //background: $brand-color;
-}*/
-
-a.bug::after {
-  content: "\F0A30";
-  color: $base-icon-color;
-  font-family: "MDI";
-  font-size: $base-icon-size;
-  padding-left: 5px;
-}
-
-a.bug:hover::after {
-  color: $hover-color;
-}
-
-a.chat::after {
-  content: "\F0EDE";
-  color: $base-icon-color;
-  font-family: "MDI";
-  font-size: $base-icon-size;
-  padding-left: 5px;
-}
-
-a.chat:hover::after {
-  color: $hover-color;
-}
-
-a.code::after {
-  content: "\F102B";
-  color: $base-icon-color;
-  font-family: "MDI";
-  font-size: $base-icon-size;
-  padding-left: 5px;
-}
-
-a.code:hover::after {
-  color: $hover-color;
-}
-
-a.commit::after {
-  content: "\F05D6";
-  color: $base-icon-color;
-  font-family: "MDI";
-  font-size: $base-icon-size;
-  padding-left: 5px;
-}
-
-a.commit:hover::after {
-  color: $hover-color;
-}
-
-a.community::after {
-  content: "\F112D";
-  color: $base-icon-color;
-  font-family: "MDI";
-  font-size: $base-icon-size;
-  padding-left: 5px;
-}
-
-a.community:hover::after {
-  color: $hover-color;
-}
-
-a.cube::after {
-  content: "\F01A7";
-  color: $base-icon-color;
-  font-family: "MDI";
-  font-size: $base-icon-size;
-  padding-left: 5px;
-}
-
-a.cube:hover::after {
-  color: $hover-color;
-}
-
-a.document::after {
-  content: "\F09EE";
-  color: $base-icon-color;
-  font-family: "MDI";
-  font-size: $base-icon-size;
-  padding-left: 5px;
-}
-
-a.document:hover::after {
-  color: $hover-color;
-}
-
-a.ext::after {
-  content: "\F03CC";
-  color: $base-icon-color;
-  font-family: "MDI";
-  font-size: $base-icon-size;
-  padding-left: 5px;
-}
-
-a.ext:hover::after {
-  color: $hover-color;
-}
-
-a.file::after {
-  content: "\F0224";
-  color: $base-icon-color;
-  font-family: "MDI";
-  font-size: $base-icon-size;
-  padding-left: 5px;
-}
-
-a.file:hover::after {
-  color: $hover-color;
-}
-
-a.git::after {
-  content: "\F02A2";
-  color: $base-icon-color;
-  font-family: "MDI";
-  font-size: $base-icon-size;
-  padding-left: 5px;
-}
-
-a.git:hover::after {
-  color: $hover-color;
-}
-
-a.home::after {
-  content: "\F06A1";
-  color: $base-icon-color;
-  font-family: "MDI";
-  font-size: $base-icon-size;
-  padding-left: 5px;
-}
-
-a.home:hover::after {
-  color: $hover-color;
-}
-
-a.love::after {
-  content: "\F02D5";
-  color: $base-icon-color;
-  font-family: "MDI";
-  font-size: $base-icon-size;
-  padding-left: 5px;
-}
-
-a.love:hover::after {
-  color: $hover-color;
-}
-
-a.mail::after {
-  content: "\F01F0";
-  color: $base-icon-color;
-  font-family: "MDI";
-  font-size: $base-icon-size;
-  padding-left: 5px;
-}
-
-a.mail:hover::after {
-  color: $hover-color;
-}
-
-a.privacy::after {
-  content: "\F0CC8";
-  color: $base-icon-color;
-  font-family: "MDI";
-  font-size: $base-icon-size;
-  padding-left: 5px;
-}
-
-a.privacy:hover::after {
-  color: $hover-color;
-}
-
-a.rss::after {
-  content: "\F046B";
-  color: $base-icon-color;
-  font-family: "MDI";
-  font-size: $base-icon-size;
-  padding-left: 5px;
-}
-
-a.rss:hover::after {
-  color: $hover-color;
-}
-
-a.search::after {
-  content: "\F0349";
-  color: $base-icon-color;
-  font-family: "MDI";
-  font-size: $base-icon-size;
-  padding-left: 5px;
-}
-
-a.search:hover::after {
-  color: $hover-color;
-}
-
-a.user::after {
-  content: "\F0013";
-  color: $base-icon-color;
-  font-family: "MDI";
-  font-size: $base-icon-size;
-  padding-left: 5px;
-}
-
-a.user:hover::after {
-  color: $hover-color;
-}
-
-a.wiki::after {
-  content: "\F1CCC";
-  color: $base-icon-color;
-  font-family: "MDI";
-  font-size: $base-icon-size;
-  padding-left: 5px;
-}
-
-a.wiki:hover::after {
-  color: $hover-color;
-}
-
 p {
   padding: 0px 0px 14px 0px;
 }
@@ -370,7 +103,7 @@ pre {
   background-size: 2.8em 2.8em;
   border: 0px $grey-color solid;
   counter-reset: line;
-  font-family: "CourierPrimeSans";
+  font-family: $base-font-family;
   font-size: $base-font-size;
   // https://stackoverflow.com/questions/5840328/styling-each-line-inside-pre-with-css
   line-height: 1.4em;
@@ -383,7 +116,7 @@ pre {
 }
 
 pre > code {
-  font-family: "CourierPrimeSans";
+  font-family: $base-font-family;
   font-size: $base-font-size;
   counter-increment: line;
   margin: 0 0 0 0;

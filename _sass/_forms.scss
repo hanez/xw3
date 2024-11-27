@@ -1,0 +1,84 @@
+#contactform {
+  padding: 20px;
+  border: 1px solid $grey-color;
+  background: $grey-color-light;
+}
+
+#contactform label, #contactform input, #contactform textarea {
+  display: block;
+  width: 97%;
+  resize: none;
+}
+
+#contactform textarea {
+  height: 120px;
+}
+
+#contactform label { margin: 10px 0; }
+
+#contactform label:first-child { margin-top: 0; }
+
+#contactform input, #contactform textarea {
+  font-family: $base-font-family;
+  font-size: $base-font-size;
+  line-height: $base-line-height;
+  font-weight: 300;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid $grey-color;
+}
+
+#contactform input[type=submit] {
+  border: 0;
+  color: #fff;
+  background: $brand-color;
+  cursor: pointer;
+  width: 100%;
+}
+
+#contactform input[type=submit]:hover {
+  background: $headline-color;
+}
+
+#searchform {
+  padding: 20px;
+  border: 1px solid $grey-color;
+  background: $grey-color-light;
+}
+
+#searchform label, #searchform input, #searchform textarea {
+  display: block;
+  width: 97%;
+  resize: none;
+}
+
+#searchform textarea {
+  height: 120px;
+}
+
+#searchform label { margin: 10px 0; }
+
+#searchform label:first-child { margin-top: 0; }
+
+#searchform input, #searchform textarea {
+  font-family: $base-font-family;
+  font-size: $base-font-size;
+  line-height: $base-line-height;
+  font-weight: 300;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid $grey-color;
+}
+
+#searchform input[type=submit] {
+  border: 0;
+  color: #fff;
+  background: $brand-color;
+  cursor: pointer;
+  width: 100%;
+}
+
+#searchform input[type=submit]:hover {
+    background: $headline-color;
+}
+

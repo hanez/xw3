@@ -1,0 +1,44 @@
+.isso-input-wrapper {
+  margin: 0px;
+  padding: 0px;
+  width: 238px;
+}
+
+.isso-input-wrapper input {
+  box-shadow: 0 0 0 0;
+  margin-top: 3px;
+}
+
+.isso-input-wrapper input[type="email"] {
+  box-shadow: 0 0 0 0;
+}
+
+.isso-input-wrapper input[type="text"] {
+  box-shadow: 0 0 0 0;
+}
+
+.isso-textarea-wrapper textarea {
+  border-radius: 0;
+  box-shadow: 0 0 0 0;
+}
+
+#isso-postbox-author, #isso-postbox-email, #isso-postbox-website, .isso-post-action input, .isso-textarea {
+  border-radius: 0;
+  font-family: $base-font-family;
+  font-size: $base-font-size;
+}
+
+.isso-post-action input[type=button], .isso-post-action input[type=submit] {
+  border: 0;
+  color: #fff;
+  background: $brand-color;
+  cursor: pointer;
+  margin-top: 3px;
+  padding: 6px 18px 6px 18px;
+  width: 100%;
+}
+
+.isso-post-action input[type=button]:hover, .isso-post-action input[type=submit]:hover {
+  background: $headline-color;
+}
+
