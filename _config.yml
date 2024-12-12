@@ -111,14 +111,15 @@ defaults:
       sitemap: false
 
 # Configuration vars for the /cgi/kernelstats/kernelstats.sh script:
-r_6_11: 9
+r_6_12: 4
+r_6_11: 11
 r_6_10: 14
 r_6_9: 12
 r_6_8: 12
-r_6_6: 62
-r_6_1: 118
+r_6_6: 65
+r_6_1: 11
 r_5_15: 173
 r_5_10: 230
 r_5_4: 286
-r_4_19: 324
+r_4_19: 32
 
