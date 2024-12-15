@@ -10,11 +10,12 @@ pre, hr, dl, dd, ol, ul, figure, span {
 }
 
 body {
-  background-color: $background-color;
-  background-image: url("/images/fractalized.jpg");
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: 100%;
+  background: $background-color;
+  //background-color: $background-color;
+  //background-image: url("/images/fractalized.jpg");
+  //background-repeat: no-repeat;
+  //background-attachment: fixed;
+  //background-size: 100%;
   color: $text-color;
   font-family: $base-font-family;
   font-size: $base-font-size;
