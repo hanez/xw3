@@ -9,4 +9,43 @@ subtitle: Manage your account here...
 permalink: /account/
 ---
 
-<h2>TODO! :P :D :)</h2>
+<h2>Login</h2>
+
+<script>
+function doSubmit() {
+  window.alert("Not implemented yet... ;)");
+  //$("#loader").removeClass("hidden");
+  event.preventDefault();
+  var form = $('#loginform')[0];
+  var data = new FormData(form);
+  $.ajax({
+    type: "POST",
+    enctype: 'multipart/form-data',
+    data: data,
+    url: "/cgi/login/",
+    processData: false,
+    contentType: false,
+    cache: false,
+    success: function(data){
+      //window.alert(data);
+      //$("#challenge").load("/cgi/challenge/");
+      $("#loader").addClass("hidden");
+    }
+  });
+  return false;
+}
+//$(document).ready(function(){
+//  $("#challenge").load("/cgi/challenge/");
+//});
+</script>
+
+<div style="margin:0;padding0;text-align:center;">
+  <form id="loginform" method="post" onsubmit="return doSubmit();">
+    <div style="margin:0;padding0;"><label>Username:</label>
+    <input type="text" name="username" id="username" required></div>
+    <div style="margin:0;padding0;"><label>Password:</label>
+    <input type="password" name="password" id="password" required></div>
+    <div style="margin:0;padding0;text-align:right;"><input type="submit" value="Login!" id="button"></div>
+  </form>
+</div>
+

@@ -39,28 +39,30 @@ $(document).ready(function(){
 });
 </script>
 
-<form id="contactform" method="post" onsubmit="return doSubmit();">
-  <div><label>Name:<span style="color:red;">*</span></label>
-  <input type="text" name="name" id="name" required></div>
+<div style="margin:0;padding0;text-align:left;">
+  <form id="contactform" method="post" onsubmit="return doSubmit();">
+    <div><label>Name:<span style="color:red;">*</span></label>
+    <input type="text" name="name" id="name" required></div>
 
-  <div><label>Email:</label>
-  <input type="email" name="email" id="email"></div>
+    <div><label>Email:</label>
+    <input type="email" name="email" id="email"></div>
 
-  <div><label>Website:</label>
-  <input type="text" name="website" id="website"></div>
+    <div><label>Website:</label>
+    <input type="text" name="website" id="website"></div>
 
-  <div><label>Subject:</label>
-  <input type="text" name="subject" id="subject"></div>
+    <div><label>Subject:</label>
+    <input type="text" name="subject" id="subject"></div>
 
-  <div><label>Message:<span style="color:red;">*</span></label>
-  <textarea name="message" id="message" required style="font-size:1em;font-family:OpenSans-Regular;"></textarea></div>
+    <div><label>Message:<span style="color:red;">*</span></label>
+    <textarea name="message" id="message" required style="font-size:1em;font-family:OpenSans-Regular;"></textarea></div>
 
-  <div style="text-align:left;width:50%;float:left;"><label>Challenge: <span id="challenge" name="challenge">NULL</span>?
-  <span style="color:red;">*</span></label>
-  <input style="width:10%;text-align:center;" type="text" name="sum" id="sum" required></div>
+    <div style="text-align:left;width:50%;float:left;"><label>Challenge: <span id="challenge" name="challenge">NULL</span>?
+    <span style="color:red;">*</span></label>
+    <input style="width:10%;text-align:center;" type="text" name="sum" id="sum" required></div>
 
-  <div style="text-align:right;width:50%;float:right;"><span style="color:red;">*</span> = Required fields</div>
+    <div style="text-align:right;width:50%;float:right;"><span style="color:red;">*</span> = Required fields</div>
 
-  <div><input type="submit" value="Send!" id="button"></div>
-</form>
+    <div><input type="submit" value="Send!" id="button"></div>
+  </form>
+</div>
 

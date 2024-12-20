@@ -1,12 +1,14 @@
+// Contact form
 #contactform {
-  padding: 20px;
-  border: 1px solid $grey-color;
-  background: $grey-color-light;
+  //padding: 20px;
+  //border: 1px solid $grey-color;
+  //background: $grey-color-light;
+  //display: inline;
 }
 
 #contactform label, #contactform input, #contactform textarea {
   display: block;
-  width: 97%;
+  width: 98%;
   resize: none;
 }
 
@@ -40,15 +42,55 @@
   background: $headline-color;
 }
 
-#searchform {
-  padding: 20px;
+// Login form
+#loginform {
+  //background: $grey-color-light;
+  //border: 1px solid $grey-color;
+  display: inline;
+  //padding: 20px;
+  //width: 380px;
+}
+
+#loginform label, #loginform input{
+  //display: block;
+  resize: none;
+}
+
+#loginform label { margin: 10px 0; }
+
+#loginform label:first-child { margin-top: 0; }
+
+#loginform input {
   border: 1px solid $grey-color;
-  background: $grey-color-light;
+  font-family: $base-font-family;
+  line-height: $base-line-height;
+  font-size: $base-font-size;
+  //font-weight: 300;
+  margin: 10px;
+  padding: 10px;
+}
+
+#loginform input[type=submit] {
+  border: 0;
+  background: $brand-color;
+  color: #fff;
+  cursor: pointer;
+}
+
+#loginform input[type=submit]:hover {
+  background: $headline-color;
+}
+
+// Search form
+#searchform {
+  //padding: 20px;
+  //border: 1px solid $grey-color;
+  //background: $grey-color-light;
 }
 
 #searchform label, #searchform input, #searchform textarea {
   display: block;
-  width: 97%;
+  width: 98%;
   resize: none;
 }
 
