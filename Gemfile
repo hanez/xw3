@@ -5,6 +5,7 @@ source "https://rubygems.org"
 gem 'addressable'
 gem 'colorator'
 gem 'concurrent-ruby'
+gem 'csv'
 gem 'em-websocket'
 gem 'i18n'
 gem 'jekyll'
